@@ -1,8 +1,8 @@
 TimeAndSpace
 ============
 
-Testing testing...1...2...3...
+Project to re-vamp the Doctor Who Archive pages one by one using proper CSS.
 
-Very first repository and it'll be a blast!
+Completed: index.html
 
-And here we go...
+Works in progress: everything else

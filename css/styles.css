@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    border-radius: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+.jumbotron  {
+    background-image: url("../images/19682-tardis-doctor-who-1920x1200-tv-show-wallpaper.png");
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    background-size: 80%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-size: 2em;
+}
+
+.jumbotron p {
+    font-size: 1.5em;
+}
+
+/** for tiny screens */
+@media (max-width: 767px) {
+    .jumbotron  {
+        background-color: black;
+        background-image: none;
+    }
+    .jumbotron h1 {
+        font-size: 1.5em;
+}
+
+    .jumbotron p {
+        font-size: 1em;
+    }
+}
+
+#slides {
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Hide for mobile, show later (for slide carousel) */
+#myCarousel {
+  display: none;
+}
+
+#quote-box {
+    display: none;
+}
+
+@media (min-width: 992px) {
+  #quote-box {
+    display: block;
+    padding: 20px;
+    height:400px;
+    width: 200px;
+    float: left;
+    background-color: #102375;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  #slides {
+    width: 940px;
+  }
+}
+
+@media (min-width: 768px) {
+  #myCarousel {
+    display: block;
+    width: 700px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    float: left;
+  }
+}
+
+#main-content {
+    margin-top: 50px;
+}
+
+.col-md-3 h2 {
+    font-size: 1.7em;
+}
+
+.col-xs-6 h2 {
+    font-size: 1.5em;
+}
+
+.has-review h2 {
+    color: #102372;
+}
