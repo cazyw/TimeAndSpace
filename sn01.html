@@ -1,247 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/favicon.ico">
-
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Doctor Who Archives - (New) Series 1</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet"  type="text/css">
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-	<link href="css/dashboard.css" rel="stylesheet">
-  </head>
-
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-	<!-- begin the top fixed bar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">		        
-          <a class="navbar-brand" href="index.html">Doctor Who Archives</a>
-          <button type="button" class="navbar-toggle icon-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#episodes" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
           </button>
-		</div>
-				<div class="menu initiallyHidden">
-          <ul class="nav">
-            <li id="sn01-00"><a class="icon-toggle" href="#asn01-00">Introduction</a></li>
-<li id="sn01-01"><a class="icon-toggle" href="#asn01-01">Episode 1 - Rose</a></li>
-<li id="sn01-02"><a class="icon-toggle" href="#asn01-02">Episode 2 - The End of the World</a></li>
-<li id="sn01-03"><a class="icon-toggle" href="#asn01-03">Episode 3 - The Unquiet Dead</a></li>
-<li id="sn01-04"><a class="icon-toggle" href="#asn01-04">Episode 4 - Aliens of London</a></li>
-<li id="sn01-05"><a class="icon-toggle" href="#asn01-05">Episode 5 - World War Three</a></li>
-<li id="sn01-06"><a class="icon-toggle" href="#asn01-06">Episode 6 - Dalek</a></li>
-<li id="sn01-07"><a class="icon-toggle" href="#asn01-07">Episode 7 - The Long Game</a></li>
-<li id="sn01-08"><a class="icon-toggle" href="#asn01-08">Episode 8 - Father's Day</a></li>
-<li id="sn01-09"><a class="icon-toggle" href="#asn01-09">Episode 9 - The Empty Child</a></li>
-<li id="sn01-10"><a class="icon-toggle" href="#asn01-10">Episode 10 - The Doctor Dances</a></li>
-<li id="sn01-11"><a class="icon-toggle" href="#asn01-11">Episode 11 - Boom Town</a></li>
-<li id="sn01-12"><a class="icon-toggle" href="#asn01-12">Episode 12 - Bad Wolf</a></li>
-<li id="sn01-13"><a class="icon-toggle" href="#asn01-13">Episode 13 - The Parting of the Ways</a></li>
-
-          </ul>
-		</div>
-
-  	  </div><!--/.navbar-collapse -->
-	
-	<!-- Main jumbotron for the title section -->
-
-	  <div class="jumbotron">
-        <div class="container">
-          <h1>Doctor Who Series 1</h1>
-         <p>Episodes from the series in 2005</p> 
+            <a class="navbar-brand" href="index.html">Doctor Who Archives</a>
         </div>
-      </div>
-    </div> 
-	<!-- end the top fixed bar-->
-	
-	<!-- Fixed Sidebar -->	
- <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar bs-docs-sidebar">
-          <ul class="nav nav-sidebar">
-            <li><a href="#asn01-00">Introduction</a></li>
-<li><a href="#asn01-01">Episode 1 - Rose</a></li>
-<li><a href="#asn01-02">Episode 2 - The End of the World</a></li>
-<li><a href="#asn01-03">Episode 3 - The Unquiet Dead</a></li>
-<li><a href="#asn01-04">Episode 4 - Aliens of London</a></li>
-<li><a href="#asn01-05">Episode 5 - World War Three</a></li>
-<li><a href="#asn01-06">Episode 6 - Dalek</a></li>
-<li><a href="#asn01-07">Episode 7 - The Long Game</a></li>
-<li><a href="#asn01-08">Episode 8 - Father's Day</a></li>
-<li><a href="#asn01-09">Episode 9 - The Empty Child</a></li>
-<li><a href="#asn01-10">Episode 10 - The Doctor Dances</a></li>
-<li><a href="#asn01-11">Episode 11 - Boom Town</a></li>
-<li><a href="#asn01-12">Episode 12 - Bad Wolf</a></li>
-<li><a href="#asn01-13">Episode 13 - The Parting of the Ways</a></li>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="episodes" class="collapse">
+          <ul class="nav navbar-nav">
+            <li id="sn01-00"><a href="#asn01-00">Introduction</a></li>
+            <li id="sn01-01"><a href="#asn01-01">Episode 1 - Rose</a></li>
+            <li id="sn01-02"><a href="#asn01-02">Episode 2 - The End of the World</a></li>
+            <li id="sn01-03"><a href="#asn01-03">Episode 3 - The Unquiet Dead</a></li>
+            <li id="sn01-04"><a href="#asn01-04">Episode 4 - Aliens of London</a></li>
+            <li id="sn01-05"><a href="#asn01-05">Episode 5 - World War Three</a></li>
+            <li id="sn01-06"><a href="#asn01-06">Episode 6 - Dalek</a></li>
+            <li id="sn01-07"><a href="#asn01-07">Episode 7 - The Long Game</a></li>
+            <li id="sn01-08"><a href="#asn01-08">Episode 8 - Father's Day</a></li>
+            <li id="sn01-09"><a href="#asn01-09">Episode 9 - The Empty Child</a></li>
+            <li id="sn01-10"><a href="#asn01-10">Episode 10 - The Doctor Dances</a></li>
+            <li id="sn01-11"><a href="#asn01-11">Episode 11 - Boom Town</a></li>
+            <li id="sn01-12"><a href="#asn01-12">Episode 12 - Bad Wolf</a></li>
+            <li id="sn01-13"><a href="#asn01-13">Episode 13 - The Parting of the Ways</a></li>
           </ul>
-         </div>
-      </div>
- </div>
- 
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
 
- <!-- /container -->
- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-    <div class="container-fluid">
-<div class="anchor" id="asn01-00"></div>
-<h3 class="page-header">Introduction</h3>
-<p>The ability to travel in all of time and space - what a fantastic concept for a show!</p>
+      <div class="jumbotron">
+        <div class="container-fluid">
+          <h1>Doctor Who Series 1</h1>
+          <p>Episodes from the series in 2005</p> 
+        </div><!-- /.container-fluid --> 
+      </div><!-- /.jumbotron -->        
+    </nav> 
+</header>
 
-<p>I didn't grow up with Doctor Who as the 'old' series ended in 1989, so it wasn't until the re-boot in 2005 that I got my first taste of the mad man in a blue box. The very first episode I watched was the first of the two-part series finale, 'Bad Wolf', and from then on I was hooked and went back to watch the rest of the season. </p>
+<body>
+<div id="main-content" class="container">
+  <section class="row">
+    <span class="anchor" id="asn01-00"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Introduction</h3>
+      <p>The ability to travel in all of time and space - what a fantastic concept for a show!</p>
 
-<p>The first season will always hold a special place in my heart, as will my first Doctor - the Ninth Doctor played by Christopher Eccleston. He was the last of his kind, the survivor of a war that had left him hardened, a tad grim and intense. You don't mess with The Doctor, the Oncoming Storm. But he was also showed a side of himself that was full of compassion, joy and laughter. I always found it incredible watching him switch from being intensely serious to grinning like a maniac in a split second. Christopher Eccleston bore the responsibility as the main protagonist of bringing Doctor Who back from obscurity and he did a fantastic job. The 21<sup>st</sup> Century needed this kind of Doctor. Having only one series (it was heartbreaking to watch him go) I think he's incredibly underrated.</p>
+      <p>I didn't grow up with Doctor Who as the 'old' series ended in 1989, so it wasn't until the re-boot in 2005 that I got my first taste of the mad man in a blue box. The very first episode I watched was the first of the two-part series finale, 'Bad Wolf', and from then on I was hooked and went back to watch the rest of the season. </p>
 
-<p>The first season is one of my favourites, having in general very good storylines that weave together the alien with the familiar. Rose was the perfect character/companion to introduce us to the Doctor's world. Young and brave, she wasn't afraid to give the Doctor a piece of her mind but her compassion for people around her and her determination to do the right thing made her a brilliant companion. She's one of the few companions in the new series with a deeper backstory, as her family appears in quite a number of episodes. She was real.</p>
+      <p>The first season will always hold a special place in my heart, as will my first Doctor - the Ninth Doctor played by Christopher Eccleston. He was the last of his kind, the survivor of a war that had left him hardened, a tad grim and intense. You don't mess with The Doctor, the Oncoming Storm. But he was also showed a side of himself that was full of compassion, joy and laughter. I always found it incredible watching him switch from being intensely serious to grinning like a maniac in a split second. Christopher Eccleston bore the responsibility as the main protagonist of bringing Doctor Who back from obscurity and he did a fantastic job. The 21<sup>st</sup> Century needed this kind of Doctor. Having only one series (it was heartbreaking to watch him go) I think he's incredibly underrated.</p>
 
-<p>It was the perfect start to travelling the universe ...</p>
+      <p>The first season is one of my favourites, having in general very good storylines that weave together the alien with the familiar. Rose was the perfect character/companion to introduce us to the Doctor's world. Young and brave, she wasn't afraid to give the Doctor a piece of her mind but her compassion for people around her and her determination to do the right thing made her a brilliant companion. She's one of the few companions in the new series with a deeper backstory, as her family appears in quite a number of episodes. She was real.</p>
 
-<!-- episode break -->
+      <p>It was the perfect start to travelling the universe ...</p>
+    </div>
+  </section>
 
-<div class="anchor" id="asn01-01"></div>
-<h3 class="page-header">Episode 1 - Rose</h3>
-<p>To be completed</p>
+  <!-- episode break -->
 
-<!-- episode break -->
+  <section class="row">
+    <span class="anchor" id="asn01-01"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 1 - Rose</h3>
 
-<div class="anchor" id="asn01-02"></div>
-<h3 class="page-header">Episode 2 - The End of the World</h3>
-<p>To be completed</p>
+    </div>
+  </section>
 
-<!-- episode break -->
+  <!-- episode break -->
 
-<div class="anchor" id="asn01-03"></div>
-<h3 class="page-header">Episode 3 - The Unquiet Dead</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn01-02"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 2 - The End of the World</h3>
 
-<!-- episode break -->
+    </div>
+  </section>
 
-<div class="anchor" id="asn01-04"></div>
-<h3 class="page-header">Episode 4 - Aliens of London</h3>
-<p>To be completed</p>
+  <!-- episode break -->
 
-<!-- episode break -->
+  <section class="row">
+    <span class="anchor" id="asn01-03"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 3 - The Unquiet Dead</h3>
 
-<div class="anchor" id="asn01-05"></div>
-<h3 class="page-header">Episode 5 - World War Three</h3>
-<p>To be completed</p>
+    </div>
+  </section>
 
-<!-- episode break -->
+  <!-- episode break -->
 
-<div class="anchor" id="asn01-06"></div>
-<h3 class="page-header">Episode 6 - Dalek</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn01-04"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 4 - Aliens of London</h3>
 
-<!-- episode break -->
+    </div>
+  </section>
 
-<div class="anchor" id="asn01-07"></div>
-<h3 class="page-header">Episode 7 - The Long Game</h3>
-<p>To be completed</p>
+  <!-- episode break -->
 
-<!-- episode break -->
+  <section class="row">
+    <span class="anchor" id="asn01-05"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 5 - World War Three</h3>
 
-<div class="anchor" id="asn01-08"></div>
-<h3 class="page-header">Episode 8 - Father's Day</h3>
-<p>If you could go back in time and save someone, would you?</p>
+    </div>
+  </section>
 
-<p>Rose never knew her father as he died when she was a baby, so it's only natural that she would want to see him when he was alive. That's what time machines are for right? The Doctor obliges by taking her to her parent's wedding, where Pete Tyler gets Jackie's name wrong (it's pretty funny). But then Rose ups the ante by wanting to see her father on the day he died. He died alone, the victim of a hit and run and Rose wants to be there for him so he doesn't have to die alone.</p>
+  <!-- episode break -->
 
-<p>Can't see any trouble brewing right? Well Rose can't just stand idly by and watch him die so she saves him. The Doctor is furious. One ordinary man who was dead is now alive. There's a wound in time, and the reapers (CGI winged breasts) have come to sterilise the wound by killing everyone in the world. Rose of course questions this because they travel the universe and save people all the time but the Doctor knows what can and can't be changed (this is delved into in the Series 4 Special 'The Waters of Mars' when The Doctor meddles with a fixed point).</p>
+  <section class="row">
+    <span class="anchor" id="asn01-06"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 6 - Dalek</h3>
 
-<p>Seeing Rose's parents (Pete and Jackie) interact was loads of fun. Jackie's 80's hair and mouthy attitude is in full force, after all, her husband has just turned up with a much younger blonde! Witnessing her parents fighting and realising that her father wasn't a successful businessman was an eye opening experience for Rose and she realised that her parent's marriage was no fairytale. </p>
+    </div>
+  </section>
 
-<p>We see how much The Doctor cares about Rose because he realises fairly early on how he can save the world, but at the cost of Pete Tyler's life. The Doctor won't put Rose through it again so he does everything he can to find another way. But when the Doctor's plans go south, Pete steps up to set things back the way they should be, by running out into the path of the car that should have killed him. It's tragic, but this time Rose manages to be with him before he dies. </p>
+  <!-- episode break -->
 
-<p>This story focused heavily on Rose's backstory and her family and is one of my favourites - the human connection, the great dialogue and interaction between the characters, I feel it really grounds the series. Because how many times do we think....oh if only I could go back in time and change this or that? Sure, we would love to explore the unknown, watch history unfold before us, but I think we'd also be sorely tempted to change our own past. And this episode investigates the dangers and consequences of that.</p>
+  <section class="row">
+    <span class="anchor" id="asn01-07"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 7 - The Long Game</h3>
 
-<!-- episode break -->
+    </div>
+  </section>
 
-<div class="anchor" id="asn01-09"></div>
-<h3 class="page-header">Episode 9 - The Empty Child</h3>
-<p>The second two-parter in this series is set during the height of the London Blitz when the Nazis are dropping bombs on London. But something else has fallen from the sky, a Chula (medical) warship that the Doctor and Rose has followed through time and space. This episode introduces us to Captain Jack Harness, an ex-Time Agent turned con-man from the 51st Century. His plan - find a piece of junk, try to sell it and demand upfront payment, then destroy it before the buyer realises he's bought a dud. But this time, his piece of junk carries a deadly cargo with it. Captain Jack is a fantastic character - he's capable withh technology and a tremendous flirt, the type of person able to talk himself out of any situation. He brings a different dynamic to the group.</p>
+  <!-- episode break -->
 
-<p>As in many horror movies, unnatural children are some of the most scary beings you can come across, and this is no exception. This child, with a gas mask fused into his face is slowly creating an army of gas masked zombies. The CGI of people growing gas masks out of their faces is really creepy. The child is roaming the streets, looking for his mummy, projecting his voice onto any audio device and constantly asking "Are you my mummy?"</p>
+  <section class="row">
+    <span class="anchor" id="asn01-08"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 8 - Father's Day</h3>
+      <p>If you could go back in time and save someone, would you?</p>
 
-<p>Nobody seems to know what is going on or who the child is except one girl - Nancy. Nancy lives on the streets and goes house to house during the air raids to find food for other street kids. Although she tells the Doctor that the child is her brother, I think it's not too difficult to see that she's more than likely the child's mother. Having children out of wedlock and especially so young was deeply frowned upon in those days.</p>
+      <p>Rose never knew her father as he died when she was a baby, so it's only natural that she would want to see him when he was alive. That's what time machines are for right? The Doctor obliges by taking her to her parent's wedding, where Pete Tyler gets Jackie's name wrong (it's pretty funny). But then Rose ups the ante by wanting to see her father on the day he died. He died alone, the victim of a hit and run and Rose wants to be there for him so he doesn't have to die alone.</p>
 
-<p>The Doctor and Rose are split up for most of the episode and Rose is saved by Captain Jack who with his high tech devices and spaceship, is much more Spock. The three finally meet up in a hospital next to the crash site and the Doctor begins to get an inkling that the mutations are all Jack's fault. After all, the problem started right where his alien spaceship is. The episode ends with the trio surrounded by gas masked zombies who have awaken and are slowly plodding towards them.</p>
+      <p>Can't see any trouble brewing right? Well Rose can't just stand idly by and watch him die so she saves him. The Doctor is furious. One ordinary man who was dead is now alive. There's a wound in time, and the reapers (CGI winged breasts) have come to sterilise the wound by killing everyone in the world. Rose of course questions this because they travel the universe and save people all the time but the Doctor knows what can and can't be changed (this is delved into in the Series 4 Special 'The Waters of Mars' when The Doctor meddles with a fixed point).</p>
 
-<p>How will they escape?
-</p>
+      <p>Seeing Rose's parents (Pete and Jackie) interact was loads of fun. Jackie's 80's hair and mouthy attitude is in full force, after all, her husband has just turned up with a much younger blonde! Witnessing her parents fighting and realising that her father wasn't a successful businessman was an eye opening experience for Rose and she realised that her parent's marriage was no fairytale. </p>
 
-<!-- episode break -->
+      <p>We see how much The Doctor cares about Rose because he realises fairly early on how he can save the world, but at the cost of Pete Tyler's life. The Doctor won't put Rose through it again so he does everything he can to find another way. But when the Doctor's plans go south, Pete steps up to set things back the way they should be, by running out into the path of the car that should have killed him. It's tragic, but this time Rose manages to be with him before he dies. </p>
 
-<div class="anchor" id="asn01-10"></div>
-<h3 class="page-header">Episode 10 - The Doctor Dances</h3>
-<p>The episode begins right where we left off, with The Doctor, Rose and Jack surrounded in a hospital ward by gas masked zombies. The Doctor, realising that it's a hive mind controlled by the child, rather humorously tells them "go to your room". He speaks to them as he would an angry parent to a child and the group obeys, slowly trundling back to their beds. The trio make their way to the room of patient zero only to later realise....the Doctor just sent the child to his room! Next begins a funny chase scene as Captain Jack with his super sonic device and The Doctor with his rather pitiful-in-comparison sonic screwdriver attempt to sonic their way to a safe spot. </p>
+      <p>This story focused heavily on Rose's backstory and her family and is one of my favourites - the human connection, the great dialogue and interaction between the characters, I feel it really grounds the series. Because how many times do we think....oh if only I could go back in time and change this or that? Sure, we would love to explore the unknown, watch history unfold before us, but I think we'd also be sorely tempted to change our own past. And this episode investigates the dangers and consequences of that.</p>
 
-<p>It's been clear in the series that The Doctor and Rose do not see themselves as boyfriend/girlfriend, as much as everyone else calls them a couple. He's a 900 year old Time Lord who's still recovering from war and she's a 19 year old shop-girl who still sort of has a boyfriend in Mickey. But the introduction of Captain Jack throws a bit of a spanner in the works and The Doctor is not entirely pleased with the attention Rose is giving to him. Compared to Mickey and Adam, Jack is competition. And the Doctor makes it quite clear to Jack that Rose is off limits at the end of the episode when The Doctor 'remembers' how to dance and refuses to let Jack cut in on his dancing with Rose. It's kinda cute really.</p>
+    </div>
+  </section>
 
-<p>It's an interesting episode because there were no real bad guys. The nanogenes in the crashed Chula warship had never encountered a human before and therefore when they 'healed' the child they assumed the gas mask was part of his form. Reuniting Nancy and the child in the presence of the nanogenes allows them to recognise the mother DNA as the superior and correct form. The nanogenes heal the child and other gas masked zombies back to the correct human form. As the Doctor ecstatically proclaims "Everybody lives Rose. Just this once, EVERYBODY LIVES." Of course, the nanogenes heal everything including, missing limbs, which leads to a funny exchange between a patient and the hospital doctor.</p>
+  <!-- episode break -->
 
-<p>It was a great two-part epsiode - a creepy mystery, a happy ending and a new addition to the TARDIS family.</p>
+  <section class="row">
+    <span class="anchor" id="asn01-09"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 9 - The Empty Child</h3>
+      <p>The second two-parter in this series is set during the height of the London Blitz when the Nazis are dropping bombs on London. But something else has fallen from the sky, a Chula (medical) warship that the Doctor and Rose has followed through time and space. This episode introduces us to Captain Jack Harness, an ex-Time Agent turned con-man from the 51st Century. His plan - find a piece of junk, try to sell it and demand upfront payment, then destroy it before the buyer realises he's bought a dud. But this time, his piece of junk carries a deadly cargo with it. Captain Jack is a fantastic character - he's capable withh technology and a tremendous flirt, the type of person able to talk himself out of any situation. He brings a different dynamic to the group.</p>
 
-<!-- episode break -->
+      <p>As in many horror movies, unnatural children are some of the most scary beings you can come across, and this is no exception. This child, with a gas mask fused into his face is slowly creating an army of gas masked zombies. The CGI of people growing gas masks out of their faces is really creepy. The child is roaming the streets, looking for his mummy, projecting his voice onto any audio device and constantly asking "Are you my mummy?"</p>
 
-<div class="anchor" id="asn01-11"></div>
-<h3 class="page-header">Episode 11 - Boom Town</h3>
-<p>To be completed</p>
+      <p>Nobody seems to know what is going on or who the child is except one girl - Nancy. Nancy lives on the streets and goes house to house during the air raids to find food for other street kids. Although she tells the Doctor that the child is her brother, I think it's not too difficult to see that she's more than likely the child's mother. Having children out of wedlock and especially so young was deeply frowned upon in those days.</p>
 
-<!-- episode break -->
+      <p>The Doctor and Rose are split up for most of the episode and Rose is saved by Captain Jack who with his high tech devices and spaceship, is much more Spock. The three finally meet up in a hospital next to the crash site and the Doctor begins to get an inkling that the mutations are all Jack's fault. After all, the problem started right where his alien spaceship is. The episode ends with the trio surrounded by gas masked zombies who have awaken and are slowly plodding towards them.</p>
 
-<div class="anchor" id="asn01-12"></div>
-<h3 class="page-header">Episode 12 - Bad Wolf</h3>
-<p>To be completed</p>
+      <p>How will they escape?</p>
+    </div>
+  </section>
 
-<!-- episode break -->
+  <!-- episode break -->
 
-<div class="anchor" id="asn01-13"></div>
-<h3 class="page-header">Episode 13 - The Parting of the Ways</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn01-10"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header"> 10 - The Doctor Dances</h3>
+      <p>The episode begins right where we left off, with The Doctor, Rose and Jack surrounded in a hospital ward by gas masked zombies. The Doctor, realising that it's a hive mind controlled by the child, rather humorously tells them "go to your room". He speaks to them as he would an angry parent to a child and the group obeys, slowly trundling back to their beds. The trio make their way to the room of patient zero only to later realise....the Doctor just sent the child to his room! Next begins a funny chase scene as Captain Jack with his super sonic device and The Doctor with his rather pitiful-in-comparison sonic screwdriver attempt to sonic their way to a safe spot. </p>
 
-<!-- episode break -->
+      <p>It's been clear in the series that The Doctor and Rose do not see themselves as boyfriend/girlfriend, as much as everyone else calls them a couple. He's a 900 year old Time Lord who's still recovering from war and she's a 19 year old shop-girl who still sort of has a boyfriend in Mickey. But the introduction of Captain Jack throws a bit of a spanner in the works and The Doctor is not entirely pleased with the attention Rose is giving to him. Compared to Mickey and Adam, Jack is competition. And the Doctor makes it quite clear to Jack that Rose is off limits at the end of the episode when The Doctor 'remembers' how to dance and refuses to let Jack cut in on his dancing with Rose. It's kinda cute really.</p>
+
+      <p>It's an interesting episode because there were no real bad guys. The nanogenes in the crashed Chula warship had never encountered a human before and therefore when they 'healed' the child they assumed the gas mask was part of his form. Reuniting Nancy and the child in the presence of the nanogenes allows them to recognise the mother DNA as the superior and correct form. The nanogenes heal the child and other gas masked zombies back to the correct human form. As the Doctor ecstatically proclaims "Everybody lives Rose. Just this once, EVERYBODY LIVES." Of course, the nanogenes heal everything including, missing limbs, which leads to a funny exchange between a patient and the hospital doctor.</p>
+
+      <p>It was a great two-part epsiode - a creepy mystery, a happy ending and a new addition to the TARDIS family.</p>
+    </div>
+  </section>
+
+  <!-- episode break -->
+
+  <section class="row">
+    <span class="anchor" id="asn01-11"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 11 - Boom Town</h3>
+
+    </div>
+  </section>
+
+  <!-- episode break -->
+
+  <section class="row">
+    <span class="anchor" id="asn01-12"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 12 - Bad Wolf</h3>
+
+    </div>
+  </section>
+
+  <!-- episode break -->
+
+  <section class="row">
+    <span class="anchor" id="asn01-13"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 13 - The Parting of the Ways</h3>
+
+    </div>
+  </section>
+
+</div><!-- /.main content container--> 
 
 <!-- Footer -->
-	<footer>
-	<hr>
-	<div class="row">
-		<div class="col-xs-6 col-md-6"><p>&copy; Cazellie 2016</p></div>
-		<div class="col-xs-6 col-md-6" align="right"><p><a href="acknowledgements.html">Acknowledgements</a></p></div>
-	</div>
-	</footer>
- 
-	</div>
- </div>	
-	
-	
-	
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-	<script src="js/docs.min.js"></script>
-	<script src="js/menu.js"></script>
+<footer>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6"><p>&copy; Cazellie 2016</p></div>
+            <div class="col-xs-6 col-sm-6 col-md-6" align="right"><p><a href="acknowledgements.html">Acknowledgements</a></p></div>
+        </div>
+    </div>
+</footer>
 
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/docs.min.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-55594701-1', 'auto');
-	ga('send', 'pageview');
-	</script>
-	
-
-  </body>
-</html>
+ga('create', 'UA-55594701-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html> 
