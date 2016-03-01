@@ -49,10 +49,6 @@ body {
   margin-top: 20px;
 }
 
-#episodes {
-  display: none;
-}
-
 .anchor{
   display: block;
   height: 140px; /*same height as header*/
@@ -79,13 +75,13 @@ body {
     }
 
     #episodes {
+        display: block;
         background-color: #222; 
-        right: 0px;      
+        right: 15px;   
+        height: 80%;   
         position: fixed;
-        height: 300px;
         overflow: auto;
         border-bottom-left-radius:5px;
-        display: block;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -127,13 +123,11 @@ body {
     position: relative;
   }
 
-  .navbar-collapse.collapse #episodes {
+  .navbar-collapse.collapse {
     display: none!important;
   }
 
 }
-
-
 
 .col-md-3 h2 {
     font-size: 1.7em;
