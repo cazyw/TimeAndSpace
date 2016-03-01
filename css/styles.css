@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 130px; 
 }
 
 .navbar {
@@ -32,6 +32,21 @@ body {
 
 .jumbotron p {
     font-size: 1.5em;
+    color: #a6a6a6;
+}
+
+
+/* Hide for mobile, show later (for slide carousel) */
+#myCarousel {
+  display: none;
+}
+
+#quote-box {
+  display: none;
+}
+
+#main-content {
+  margin-top: 20px;
 }
 
 /** for tiny screens */
@@ -49,19 +64,6 @@ body {
     }
 }
 
-#slides {
-    margin-top: 50px;
-    position: relative;
-}
-
-/* Hide for mobile, show later (for slide carousel) */
-#myCarousel {
-  display: none;
-}
-
-#quote-box {
-    display: none;
-}
 
 @media (min-width: 992px) {
   #quote-box {
@@ -92,11 +94,14 @@ body {
     position: relative;
     float: left;
   }
+
+  #slides {
+    margin-top: 50px;
+    position: relative;
+  }
 }
 
-#main-content {
-    margin-top: 50px;
-}
+
 
 .col-md-3 h2 {
     font-size: 1.7em;
@@ -108,4 +113,11 @@ body {
 
 .has-review h2 {
     color: #102372;
+}
+
+.page-header {
+    margin-top: 20px;
+}
+ol {
+    padding-left: 20px;
 }
