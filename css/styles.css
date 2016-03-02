@@ -103,11 +103,13 @@ body {
     }
 
     #episodes {
+        display: block;
         background-color: #222; 
         right: 15px;   
         height: 80%;   
         position: fixed;
         overflow: auto;
+        z-index: 1000;
         border-bottom-left-radius:5px;
         padding-right: 15px;
         padding-left: 15px;
