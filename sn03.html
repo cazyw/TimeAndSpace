@@ -1,169 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/favicon.ico">
-
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Doctor Who Archives - (New) Series 3</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet"  type="text/css">
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-	<link href="css/dashboard.css" rel="stylesheet">
-  </head>
-
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-	<!-- begin the top fixed bar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">		        
-          <a class="navbar-brand" href="index.html">Doctor Who Archives</a>
-          <button type="button" class="navbar-toggle icon-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#episodes" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
           </button>
-		</div>
-				<div class="menu initiallyHidden">
-          <ul class="nav">
-            <li id="sn03-00"><a class="icon-toggle" href="#asn03-00">Introduction</a></li>
-<li id="sn03-00_01"><a class="icon-toggle" href="#asn03-00_01">Christmas Special - The Runaway Bride</a></li>
-<li id="sn03-01"><a class="icon-toggle" href="#asn03-01">Episode 1 - Smith and Jones</a></li>
-<li id="sn03-02"><a class="icon-toggle" href="#asn03-02">Episode 2 - The Shakespeare Code</a></li>
-<li id="sn03-03"><a class="icon-toggle" href="#asn03-03">Episode 3 - Gridlock</a></li>
-<li id="sn03-04"><a class="icon-toggle" href="#asn03-04">Episode 4 - Daleks in Manhatten</a></li>
-<li id="sn03-05"><a class="icon-toggle" href="#asn03-05">Episode 5 - Evolution of the Daleks</a></li>
-<li id="sn03-06"><a class="icon-toggle" href="#asn03-06">Episode 6 - The Lazarus Experiment</a></li>
-<li id="sn03-07"><a class="icon-toggle" href="#asn03-07">Episode 7 - 42</a></li>
-<li id="sn03-08"><a class="icon-toggle" href="#asn03-08">Episode 8 - Human Nature</a></li>
-<li id="sn03-09"><a class="icon-toggle" href="#asn03-09">Episode 9 - The Family of Blood</a></li>
-<li id="sn03-10"><a class="icon-toggle" href="#asn03-10">Episode 10 - Blink</a></li>
-<li id="sn03-11"><a class="icon-toggle" href="#asn03-11">Episode 11 - Utopia</a></li>
-<li id="sn03-12"><a class="icon-toggle" href="#asn03-12">Episode 12 - The Sound of Drums</a></li>
-<li id="sn03-13"><a class="icon-toggle" href="#asn03-13">Episode 13 - Last of the Time Lords</a></li>
-
-          </ul>
-		</div>
-
-  	  </div><!--/.navbar-collapse -->
-	
-	<!-- Main jumbotron for the title section -->
-
-	  <div class="jumbotron">
-        <div class="container">
-          <h1>Doctor Who Series 3</h1>
-         <p>Episodes from the series in 2007</p> 
+            <a class="navbar-brand" href="index.html">Doctor Who Archives</a>
         </div>
-      </div>
-    </div> 
-	<!-- end the top fixed bar-->
-	
-	<!-- Fixed Sidebar -->	
- <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar bs-docs-sidebar">
-          <ul class="nav nav-sidebar">
-            <li><a href="#asn03-00">Introduction</a></li>
-<li><a href="#asn03-00_01">Christmas Special - The Runaway Bride</a></li>
-<li><a href="#asn03-01">Episode 1 - Smith and Jones</a></li>
-<li><a href="#asn03-02">Episode 2 - The Shakespeare Code</a></li>
-<li><a href="#asn03-03">Episode 3 - Gridlock</a></li>
-<li><a href="#asn03-04">Episode 4 - Daleks in Manhatten</a></li>
-<li><a href="#asn03-05">Episode 5 - Evolution of the Daleks</a></li>
-<li><a href="#asn03-06">Episode 6 - The Lazarus Experiment</a></li>
-<li><a href="#asn03-07">Episode 7 - 42</a></li>
-<li><a href="#asn03-08">Episode 8 - Human Nature</a></li>
-<li><a href="#asn03-09">Episode 9 - The Family of Blood</a></li>
-<li><a href="#asn03-10">Episode 10 - Blink</a></li>
-<li><a href="#asn03-11">Episode 11 - Utopia</a></li>
-<li><a href="#asn03-12">Episode 12 - The Sound of Drums</a></li>
-<li><a href="#asn03-13">Episode 13 - Last of the Time Lords</a></li>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="episodes" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+           <li id="sn03-00"><a href="#asn03-00">Introduction</a></li>
+           <li id="sn03-00_01"><a href="#asn03-00_01">Christmas Special - The Runaway Bride</a></li>
+           <li id="sn03-01"><a href="#asn03-01">Episode 1 - Smith and Jones</a></li>
+           <li id="sn03-02"><a href="#asn03-02">Episode 2 - The Shakespeare Code</a></li>
+           <li id="sn03-03"><a href="#asn03-03">Episode 3 - Gridlock</a></li>
+           <li id="sn03-04"><a href="#asn03-04">Episode 4 - Daleks in Manhatten</a></li>
+           <li id="sn03-05"><a href="#asn03-05">Episode 5 - Evolution of the Daleks</a></li>
+           <li id="sn03-06"><a href="#asn03-06">Episode 6 - The Lazarus Experiment</a></li>
+           <li id="sn03-07"><a href="#asn03-07">Episode 7 - 42</a></li>
+           <li id="sn03-08"><a href="#asn03-08">Episode 8 - Human Nature</a></li>
+           <li id="sn03-09"><a href="#asn03-09">Episode 9 - The Family of Blood</a></li>
+           <li id="sn03-10"><a href="#asn03-10">Episode 10 - Blink</a></li>
+           <li id="sn03-11"><a href="#asn03-11">Episode 11 - Utopia</a></li>
+           <li id="sn03-12"><a href="#asn03-12">Episode 12 - The Sound of Drums</a></li>
+           <li id="sn03-13"><a href="#asn03-13">Episode 13 - Last of the Time Lords</a></li>
 
           </ul>
-         </div>
-      </div>
- </div>
- 
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
 
- <!-- /container -->
- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-    <div class="container-fluid">
-<div class="anchor" id="asn03-00"></div>
-<h3 class="page-header">Introduction</h3>
-<p>So with the loss of Rose, the Doctor picks up a new companion this series with Martha - a student studying to be a doctor (of the medical kind).
+      <div class="jumbotron">
+        <div class="container-fluid">
+          <h1>Doctor Who Series 3</h1>
+          <p>Episodes from the series in 2007</p> 
+        </div><!-- /.container-fluid --> 
+      </div><!-- /.jumbotron -->        
+    </nav> 
+</header>
+
+<body data-spy="scroll" data-target="#episode-list">
+<div id="main-content" class="container-fluid">
+
+
+<!-- sidebar -->
+
+<div id="episode-list" class="sidebar list-group">
+  <ul class="nav nav-sidebar">
+    <li><a href="#asn03-00">Introduction</a></li>
+    <li><a href="#asn03-00_01">Christmas Special - The Runaway Bride</a></li>
+    <li><a href="#asn03-01">Episode 1 - Smith and Jones</a></li>
+    <li><a href="#asn03-02">Episode 2 - The Shakespeare Code</a></li>
+    <li><a href="#asn03-03">Episode 3 - Gridlock</a></li>
+    <li><a href="#asn03-04">Episode 4 - Daleks in Manhatten</a></li>
+    <li><a href="#asn03-05">Episode 5 - Evolution of the Daleks</a></li>
+    <li><a href="#asn03-06">Episode 6 - The Lazarus Experiment</a></li>
+    <li><a href="#asn03-07">Episode 7 - 42</a></li>
+    <li><a href="#asn03-08">Episode 8 - Human Nature</a></li>
+    <li><a href="#asn03-09">Episode 9 - The Family of Blood</a></li>
+    <li><a href="#asn03-10">Episode 10 - Blink</a></li>
+    <li><a href="#asn03-11">Episode 11 - Utopia</a></li>
+    <li><a href="#asn03-12">Episode 12 - The Sound of Drums</a></li>
+    <li><a href="#asn03-13">Episode 13 - Last of the Time Lords</a></li>
+
+  </ul>
+</div>
+
+<!-- episode review -->
+
+<div class="episode-review">
+  <section class="row">
+    <span class="anchor" id="asn03-00"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Introduction</h3>
+      <p>So with the loss of Rose, the Doctor picks up a new companion this series with Martha - a student studying to be a doctor (of the medical kind).
  It was hard, having just changed to a new Doctor last year to then change companions, and Martha sometimes gets the short end of the stick when 
 it comes to companions (the Doctor still mourning the loss of Rose). But she's smart, she's got guts and the Doctor needs her.</p>
 
-<!-- episode break -->
-
-<div class="anchor" id="asn03-00_01"></div>
-<h3 class="page-header">Christmas Special - The Runaway Bride</h3>
-<p>To be completed</p>
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-01"></div>
-<h3 class="page-header">Episode 1 - Smith and Jones</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-00_01"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Christmas Special - The Runaway Bride</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-02"></div>
-<h3 class="page-header">Episode 2 - The Shakespeare Code</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-01"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 1 - Smith and Jones</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-03"></div>
-<h3 class="page-header">Episode 3 - Gridlock</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-02"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 2 - The Shakespeare Code</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-04"></div>
-<h3 class="page-header">Episode 4 - Daleks in Manhatten</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-03"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 3 - Gridlock</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-05"></div>
-<h3 class="page-header">Episode 5 - Evolution of the Daleks</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-04"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 4 - Daleks in Manhatten</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-06"></div>
-<h3 class="page-header">Episode 6 - The Lazarus Experiment</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-05"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 5 - Evolution of the Daleks</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-07"></div>
-<h3 class="page-header">Episode 7 - 42</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-06"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 6 - The Lazarus Experiment</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-08"></div>
-<h3 class="page-header">Episode 8 - Human Nature</h3>
-<p>So this is the first of the two-part episodes and it's an interesting change in dynamics as the Doctor, literally, becomes human. There's a 
+  <section class="row">
+    <span class="anchor" id="asn03-07"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 7 - 42</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
+
+<!-- episode break -->
+
+  <section class="row">
+    <span class="anchor" id="asn03-08"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 8 - Human Nature</h3>
+      <p>So this is the first of the two-part episodes and it's an interesting change in dynamics as the Doctor, literally, becomes human. There's a 
 		group of aliens hunting The Doctor but they've got only a limited amount of time so The Doctor decides to hide and wait out the 3 months. Using 
 the chameleon arch (which will pop up again later this series), he wipes his memories and turns himself human. Human John Smith, teacher of a boys'
 		boarding school in England in 1913, with Martha tagging along as his maid, watching over him. All his memories are stored in a fob watch.		</p>
 
-<p>He may have forgotten who he is but his memories seep through in his dreams and the journal he keeps is full of drawings and fantastical 'stories'. 
+      <p>He may have forgotten who he is but his memories seep through in his dreams and the journal he keeps is full of drawings and fantastical 'stories'. 
 For two months, all seems to be going well but then, trouble starts brewing on a few fronts. First, John Smith begins to fall in love with Nurse 
 Joan Redfern (which leads to heartbreak later) and secondly, the aliens have landed. Martha is flummoxed. The Doctor had left a video of instructions 
 on what to do in his 'absence' but he hadn't anticipated falling in love or an alien encounter.</p>
 
-<p>The aliens by the way, take form by possessing several humans and are pretty creepy, particularly the actor playing the 'son'. 
+      <p>The aliens by the way, take form by possessing several humans and are pretty creepy, particularly the actor playing the 'son'. 
 	He's got the strangest expressions and mannerisms. This family of aliens call each other 'mother-of-mine, son-of-mine' etc.
  The scarecrow army is scary too in the way they've sewn the eyes and mouths. They suspect and 
 sense that The Doctor is in the area but not having seen his face, don't know what he looks like. Tim Latimer, one of the school boys has low-level 
@@ -171,105 +209,137 @@ telepathic abilities and ends up taking the Doctor's fob watch and being able to
 some of whatever-is-inside, the aliens pick up the scent. Tim sees glimpses of the truth throughout the episode, the truth of 'John Smith', of Martha, 
 of his own future but it's all confusing and the watch tells him to wait, to hide.</p>
 
-<p>Martha, having realised that the aliens have managed to track them tries to get The Doctor back but the fob watch is gone and John Smith is having 
+      <p>Martha, having realised that the aliens have managed to track them tries to get The Doctor back but the fob watch is gone and John Smith is having 
 none of her nonsense. He's asked Nurse Redfern to the village dance and effectively throws Martha out. But she's not giving up and tries to confront 
 him again at the Dance. The episode ends on a cliffhanger as the aliens enter the dance and having figured out that John Smith is The Doctor, 
 		hold Martha and Nurse Redfern hostage, forcing the Doctor to choose between them.</p>
 
-<p>It's an intriguing episode as The Doctor isn't the font of knowledge and we see him as a human, bumbling about as humans do, doing things that we'd 
+      <p>It's an intriguing episode as The Doctor isn't the font of knowledge and we see him as a human, bumbling about as humans do, doing things that we'd 
 never see him do as The Doctor (teaching children to prepare for war, getting into a relationship). It's also difficult for Martha, reduced to 
 		being a maid during a time when women and people of colour were subservient to the men, having to watch over The Doctor who had no idea of her worth.		</p>
 
+    </div>
+  </section>
+
 <!-- episode break -->
 
-<div class="anchor" id="asn03-09"></div>
-<h3 class="page-header">Episode 9 - The Family of Blood</h3>
-<p>Part two of this two-parter picks up where the last episode ended, with Martha and Nurse Redfern held captive and The Doctor forced to choose between 
+  <section class="row">
+    <span class="anchor" id="asn03-09"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 9 - The Family of Blood</h3>
+      <p>Part two of this two-parter picks up where the last episode ended, with Martha and Nurse Redfern held captive and The Doctor forced to choose between 
 them. But he is saved when Tim Latimer opens the fob watch and distracts the aliens (he does this several times throughout the episode). People flee and 
 The Doctor, Martha and Nurse Redfern return to the school. The students take up defensive positions and prepare for battle against the aliens. 
 'The Family of Blood' as they call themselves arrive with their scarecrow army.
 		
 	</p>
 
-<p>When the time comes, The Doctor is unable to fire at the scarecrow army and after the Headmaster is killed, he calls for retreat. The trio flee to 
+      <p>When the time comes, The Doctor is unable to fire at the scarecrow army and after the Headmaster is killed, he calls for retreat. The trio flee to 
 an empty house where John Smith is once again confronted with the truth, he is not who he thinks he is, he is The Doctor and he must take the fob 
 watch (brought by Tim Latimer) and become the Time Lord he is. Only problem, he's made quite a nice life here and he doesn't want to 'die'. He doesn't 
 want to lose everything he's gained. I love how Tim Latimer describes The Doctor - 
 "He's like fire and ice and rage. He's like the night, and the storm in the heart of the sun. 
 He's ancient and forever. He burns at the center of time and he can see the turn of the universe. And... he's wonderful"</p>
 
-<p>It's strange and heart-wrenching to see The Doctor/John Smith having to come to grips with the truth and the decision he has to make. He can see 
+      <p>It's strange and heart-wrenching to see The Doctor/John Smith having to come to grips with the truth and the decision he has to make. He can see 
 what his life would be like as a human (marriage, children) and he doesn't want to let it go. But in the end, he gives it all up to become The Doctor.
 	How the Doctor blows up The Family's ship (swiping buttons on the wall) makes no sense (really, who would design a spaceship like this) but it's done.
  What he does to 'The Family' in the end is quite chilling - the fury of a Time Lord. Made more so by the narration of the son - 
 "We wanted to live forever. So the Doctor made sure we did." It's somewhat reminiscent of his actions in the Christmas episode "The Runaway Bride"
 	when he sentences the Racnoss' children to death. It's a reminder of the darkness within him.</p>
 
-<p>But it's also heart-breaking for Nurse Redfern, who never expected to fall in love again and finds out that the man she's falling for is not who she 
+      <p>But it's also heart-breaking for Nurse Redfern, who never expected to fall in love again and finds out that the man she's falling for is not who she 
 thinks he is. The Doctor asks Nurse Redfern to join him in the TARDIS, that maybe they could start again. But she declines, asking him - 
 if he hadn't come, would those who were killed have died? In her mind The Doctor hid amongst them, leading the aliens to them, while John Smith was willing to 'die'. She hasn't forgiven him for what happens, it hurts far too much. But, she still has John Smith's journal (which pops up again
  several seasons from now).</p>
 
-<p>All in all an enjoyable two-parter. There were seriously creepy aliens. A different and intriguing set of circumstances and take on The Doctor.</p>
+      <p>All in all an enjoyable two-parter. There were seriously creepy aliens. A different and intriguing set of circumstances and take on The Doctor.</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-10"></div>
-<h3 class="page-header">Episode 10 - Blink</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-10"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 10 - Blink</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-11"></div>
-<h3 class="page-header">Episode 11 - Utopia</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-11"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 11 - Utopia</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-12"></div>
-<h3 class="page-header">Episode 12 - The Sound of Drums</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-12"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 12 - The Sound of Drums</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn03-13"></div>
-<h3 class="page-header">Episode 13 - Last of the Time Lords</h3>
-<p>To be completed</p>
+  <section class="row">
+    <span class="anchor" id="asn03-13"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 13 - Last of the Time Lords</h3>
+      <p>To be completed</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
+
+</div><!-- /.episode review--> 
+</div><!-- /.main content container--> 
 
 <!-- Footer -->
-	<footer>
-	<hr>
-	<div class="row">
-		<div class="col-xs-6 col-md-6"><p>&copy; Cazellie 2016</p></div>
-		<div class="col-xs-6 col-md-6" align="right"><p><a href="acknowledgements.html">Acknowledgements</a></p></div>
-	</div>
-	</footer>
- 
-	</div>
- </div>	
-	
-	
-	
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-	<script src="js/docs.min.js"></script>
-	<script src="js/menu.js"></script>
+<footer>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6"><p>&copy; Cazellie 2016</p></div>
+            <div class="col-xs-6 col-sm-6 col-md-6" align="right"><p><a href="acknowledgements.html">Acknowledgements</a></p></div>
+        </div>
+    </div>
+</footer>
 
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/docs.min.js"></script>
+<script src="js/menu.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-55594701-1', 'auto');
-	ga('send', 'pageview');
-	</script>
-	
+ga('create', 'UA-55594701-1', 'auto');
+ga('send', 'pageview');
 
-  </body>
-</html>
+
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+</script>
+</body>
+</html> 

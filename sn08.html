@@ -1,103 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../images/favicon.ico">
-
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Doctor Who Archives - (New) Series 8</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet"  type="text/css">
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-	<link href="css/dashboard.css" rel="stylesheet">
-  </head>
-
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
-	<!-- begin the top fixed bar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">		        
-          <a class="navbar-brand" href="index.html">Doctor Who Archives</a>
-          <button type="button" class="navbar-toggle icon-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#episodes" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
           </button>
-		</div>
-				<div class="menu initiallyHidden">
-          <ul class="nav">
-            <li id="sn08-00"><a class="icon-toggle" href="#asn08-00">Introduction</a></li>
-<li id="sn08-01"><a class="icon-toggle" href="#asn08-01">Episode 1 - Deep Breath</a></li>
-<li id="sn08-02"><a class="icon-toggle" href="#asn08-02">Episode 2 - Into the Dalek</a></li>
-<li id="sn08-03"><a class="icon-toggle" href="#asn08-03">Episode 3 - Robots of Sherwood</a></li>
-<li id="sn08-04"><a class="icon-toggle" href="#asn08-04">Episode 4 - Listen</a></li>
-<li id="sn08-05"><a class="icon-toggle" href="#asn08-05">Episode 5 - Time Heist</a></li>
-<li id="sn08-06"><a class="icon-toggle" href="#asn08-06">Episode 6 - The Caretaker</a></li>
-<li id="sn08-07"><a class="icon-toggle" href="#asn08-07">Episode 7 - Kill the Moon</a></li>
-<li id="sn08-08"><a class="icon-toggle" href="#asn08-08">Episode 8 - Mummy on the Orient Express</a></li>
-<li id="sn08-09"><a class="icon-toggle" href="#asn08-09">Episode 9 - Flatline</a></li>
-<li id="sn08-10"><a class="icon-toggle" href="#asn08-10">Episode 10 - In the Forest of the Night</a></li>
-<li id="sn08-11"><a class="icon-toggle" href="#asn08-11">Episode 11 - Dark Water</a></li>
-<li id="sn08-12"><a class="icon-toggle" href="#asn08-12">Episode 12 - Death in Heaven</a></li>
-<li id="sn08-13"><a class="icon-toggle" href="#asn08-13">Christmas Special - Last Christmas</a></li>
-<li id="sn08-14"><a class="icon-toggle" href="#asn08-14">Concluding Thoughts</a></li>
-
-          </ul>
-		</div>
-
-  	  </div><!--/.navbar-collapse -->
-	
-	<!-- Main jumbotron for the title section -->
-
-	  <div class="jumbotron">
-        <div class="container">
-          <h1>Doctor Who Series 8</h1>
-         <p>Episodes from the series in 2014</p> 
+            <a class="navbar-brand" href="index.html">Doctor Who Archives</a>
         </div>
-      </div>
-    </div> 
-	<!-- end the top fixed bar-->
-	
-	<!-- Fixed Sidebar -->	
- <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar bs-docs-sidebar">
-          <ul class="nav nav-sidebar">
-            <li><a href="#asn08-00">Introduction</a></li>
-<li><a href="#asn08-01">Episode 1 - Deep Breath</a></li>
-<li><a href="#asn08-02">Episode 2 - Into the Dalek</a></li>
-<li><a href="#asn08-03">Episode 3 - Robots of Sherwood</a></li>
-<li><a href="#asn08-04">Episode 4 - Listen</a></li>
-<li><a href="#asn08-05">Episode 5 - Time Heist</a></li>
-<li><a href="#asn08-06">Episode 6 - The Caretaker</a></li>
-<li><a href="#asn08-07">Episode 7 - Kill the Moon</a></li>
-<li><a href="#asn08-08">Episode 8 - Mummy on the Orient Express</a></li>
-<li><a href="#asn08-09">Episode 9 - Flatline</a></li>
-<li><a href="#asn08-10">Episode 10 - In the Forest of the Night</a></li>
-<li><a href="#asn08-11">Episode 11 - Dark Water</a></li>
-<li><a href="#asn08-12">Episode 12 - Death in Heaven</a></li>
-<li><a href="#asn08-13">Christmas Special - Last Christmas</a></li>
-<li><a href="#asn08-14">Concluding Thoughts</a></li>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="episodes" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+           <li id="sn08-00"><a href="#asn08-00">Introduction</a></li>
+           <li id="sn08-01"><a href="#asn08-01">Episode 1 - Deep Breath</a></li>
+           <li id="sn08-02"><a href="#asn08-02">Episode 2 - Into the Dalek</a></li>
+           <li id="sn08-03"><a href="#asn08-03">Episode 3 - Robots of Sherwood</a></li>
+           <li id="sn08-04"><a href="#asn08-04">Episode 4 - Listen</a></li>
+           <li id="sn08-05"><a href="#asn08-05">Episode 5 - Time Heist</a></li>
+           <li id="sn08-06"><a href="#asn08-06">Episode 6 - The Caretaker</a></li>
+           <li id="sn08-07"><a href="#asn08-07">Episode 7 - Kill the Moon</a></li>
+           <li id="sn08-08"><a href="#asn08-08">Episode 8 - Mummy on the Orient Express</a></li>
+           <li id="sn08-09"><a href="#asn08-09">Episode 9 - Flatline</a></li>
+           <li id="sn08-10"><a href="#asn08-10">Episode 10 - In the Forest of the Night</a></li>
+           <li id="sn08-11"><a href="#asn08-11">Episode 11 - Dark Water</a></li>
+           <li id="sn08-12"><a href="#asn08-12">Episode 12 - Death in Heaven</a></li>
+           <li id="sn08-13"><a href="#asn08-13">Christmas Special - Last Christmas</a></li>
+           <li id="sn08-14"><a href="#asn08-14">Concluding Thoughts</a></li>
 
           </ul>
-         </div>
-      </div>
- </div>
- 
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
 
- <!-- /container -->
- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-    <div class="container-fluid">
-<div class="anchor" id="asn08-00"></div>
-<h3 class="page-header">Introduction</h3>
-<p>A New New New Doctor. Gallifrey lives! The 50<sup>th</sup> anniversary special in 2013 brought with it the startling news 
+      <div class="jumbotron">
+        <div class="container-fluid">
+          <h1>Doctor Who Series 8</h1>
+          <p>Episodes from the series in 2014</p> 
+        </div><!-- /.container-fluid --> 
+      </div><!-- /.jumbotron -->        
+    </nav> 
+</header>
+
+<body data-spy="scroll" data-target="#episode-list">
+<div id="main-content" class="container-fluid">
+
+
+<!-- sidebar -->
+
+<div id="episode-list" class="sidebar list-group">
+  <ul class="nav nav-sidebar">
+    <li><a href="#asn08-00">Introduction</a></li>
+    <li><a href="#asn08-01">Episode 1 - Deep Breath</a></li>
+    <li><a href="#asn08-02">Episode 2 - Into the Dalek</a></li>
+    <li><a href="#asn08-03">Episode 3 - Robots of Sherwood</a></li>
+    <li><a href="#asn08-04">Episode 4 - Listen</a></li>
+    <li><a href="#asn08-05">Episode 5 - Time Heist</a></li>
+    <li><a href="#asn08-06">Episode 6 - The Caretaker</a></li>
+    <li><a href="#asn08-07">Episode 7 - Kill the Moon</a></li>
+    <li><a href="#asn08-08">Episode 8 - Mummy on the Orient Express</a></li>
+    <li><a href="#asn08-09">Episode 9 - Flatline</a></li>
+    <li><a href="#asn08-10">Episode 10 - In the Forest of the Night</a></li>
+    <li><a href="#asn08-11">Episode 11 - Dark Water</a></li>
+    <li><a href="#asn08-12">Episode 12 - Death in Heaven</a></li>
+    <li><a href="#asn08-13">Christmas Special - Last Christmas</a></li>
+    <li><a href="#asn08-14">Concluding Thoughts</a></li>
+
+  </ul>
+</div>
+
+<!-- episode review -->
+
+<div class="episode-review">
+  <section class="row">
+    <span class="anchor" id="asn08-00"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Introduction</h3>
+      <p>A New New New Doctor. Gallifrey lives! The 50<sup>th</sup> anniversary special in 2013 brought with it the startling news 
 that Gallifrey was not destroyed in the Time War but locked away outside time and space (in 'cup-a-soup"). This was further mentioned 
 in the 11<sup>th</sup> Doctor's finale "The Time of the Doctor", where it was revealed that the Timelords were calling through the cracks in 
 the universe. Interestingly although the Doctor knows he saved Gallifrey, this season will herald a darker Doctor. But the 12<sup>th</sup>
@@ -108,35 +101,40 @@ Simple, with a sort of traditional orchestral theme track. The title sequences i
 sometimes it feels like they've just thrown random cool ideas together. I do think it's nice that they've based the current visual sequence on 
 a very impressive sequence made by a fan (although to be honest I think the fan-made one was better). </p>
 
-<p>So, what's in store for this 2000+ year old Timelord? We have 12 weeks of adventuring to find out...</p>
+      <p>So, what's in store for this 2000+ year old Timelord? We have 12 weeks of adventuring to find out...</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn08-01"></div>
-<h3 class="page-header">Episode 1 - Deep Breath	</h3>
-<p>How long can you hold your breath?
+  <section class="row">
+    <span class="anchor" id="asn08-01"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 1 - Deep Breath	</h3>
+      <p>How long can you hold your breath?
 This was the first movie-length episode for the 12<sup>th</sup> Doctor and overall it was an enjoyable episode. Victorian England. Madam Vastra, Jenny 
 and Strax. Clockwork droids. Scottishness. Humour. And a mysterious character at the end who looks to be the puzzle for this series.
 The dinosaur was a bit of an anti-climax, opening the episode but playing no real part after it went up in flames within the first quarter. 
 The Doctor was confused about everything for most of the episode (similar to the 8<sup>th</sup> Doctor post-regeneration). Poor Clara was really cast adrift, not quite sure if this new Doctor still the same man, if she could still trust him, if he still cared.</p>
 
-<p>But confusion aside, where the Doctor is, trouble follows and this time, some new but familiar enemies returned. Anyone who 
+      <p>But confusion aside, where the Doctor is, trouble follows and this time, some new but familiar enemies returned. Anyone who 
 remembers the clockwork droids from the Series 2 episode "The Girl in the Fireplace" will pick up their distinctive ticking sound only this time, 
 instead of the ship "SS Madam de Pompadour", it's the "SS Marie Antoinette". The title refers to the fact that the droids obviously don't breathe 
 but detect life based on breath/air circulation. Don't tell me you didn't try to hold your breath with Clara as she attempted to escape! 
 The Doctor's disguise and plan to save Clara was a clever idea and his conversation with the main droid showed a darker side to this ancient alien. 
 I was suprised by the droid's grizzly ending though. For a children's show it was visually confronting.</p>
 
-<p>While I understand the relationship between Madam Vastra and Jenny is all new-age and there have been many a joke about it, I think it has 
+      <p>While I understand the relationship between Madam Vastra and Jenny is all new-age and there have been many a joke about it, I think it has 
 been commented on time and time again to the point of it becoming rather forced. Perhaps it is more novel for those who haven't seen all their episodes 
 but the need to constantly refer to their relationship status seems somewhat contrived.	</p>
 
-<p>This episode also had some great witty banter. The restaurant scene was quite hilarious, with Clara's reaction to  
+      <p>This episode also had some great witty banter. The restaurant scene was quite hilarious, with Clara's reaction to  
 the Doctor reeking of rubbish and then the Doctor calling Clara an "egomaniac needy game player sort of person". The Doctor was pretty witty himself 
 when he was bumbling around with the tramp, discovering his "attack eyebrows", frowny face and Scottishness. 
 And Strax, good ol Strax is always a hoot and there were some great interactions with Clara.</p>
 
-<p>What was really surprising was the 11<sup>th</sup> Doctor's surprise appearance at the end to reassure Clara (and the audience) that yes, 
+      <p>What was really surprising was the 11<sup>th</sup> Doctor's surprise appearance at the end to reassure Clara (and the audience) that yes, 
 he really was/is still the same man. In a bit of timey-wimey, the 11<sup>th</sup> Doctor phones the future Clara from Trenzalore to tell her that 
 no matter how afraid she is, he is more so, and he still needs her. People will debate whether it was really necessary to bring up an old Doctor 
 just as we were getting used to the new Doctor, but it was touching, particularly as this new Doctor is quite different from his previous 
@@ -146,11 +144,16 @@ All in all it was a pretty decent introduction to the 12<sup>th</sup> Doctor. Th
 "The End of the World", with the Doctor and Clara going for coffee (rather than chips). The episode ending revealed the main mystery for this 
 season...Missy, 'paradise' and the droid who supposedly died.</p>
 
+    </div>
+  </section>
+
 <!-- episode break -->
 
-<div class="anchor" id="asn08-02"></div>
-<h3 class="page-header">Episode 2 - Into the Dalek</h3>
-<p>The second episode of the series brought the return of the Doctor's most hated of enemies, the Daleks. And hate indeed was one of the main themes 
+  <section class="row">
+    <span class="anchor" id="asn08-02"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 2 - Into the Dalek</h3>
+      <p>The second episode of the series brought the return of the Doctor's most hated of enemies, the Daleks. And hate indeed was one of the main themes 
 of the episode as the Doctor pondered what kind of man he was - was he a good man? .
 The question was raised when the Doctor came across the seemingly impossible - a good Dalek. The Doctor's prejudices blinded him to the idea that 
 a dalek could be anything more than a metal case of hate (similar to the Series 1 episode "Dalek"). Like Rose before her, Clara was able to challenge 
@@ -158,7 +161,7 @@ the Doctor to see what was right infront of him - a dalek who was able to apprec
 the dalek looked into the Doctor's mind and found not just the Doctor's love but also the the Doctor's hate. And it is a burning hatred for the 
 destruction of the daleks. As the dalek says at the end to the Doctor - "you would make a good dalek". </p>
 
-<p>In this episode the Doctor lands in the middle of a war between the daleks and humans and having found this 'good dalek', 
+      <p>In this episode the Doctor lands in the middle of a war between the daleks and humans and having found this 'good dalek', 
 gets miniaturised along with Clara and three soldiers to go inside the dalek to 'fix it'. It was interesting to see the daleks from a different 
 viewpoint (from the inside) and to discover new information about them, like how they have an immune system and are able to suppress memories 
 to keep themselves 'pure'. And when one of the soldiers, Gretchen, sacrifices herself to buy the others time, it's a reminder that while 
@@ -166,43 +169,48 @@ the Doctor's plan might save the day, he achieves it only through the willingnes
 Gretchen? We're shown she is with Missy in 'paradise'. But who is Missy and why is she collecting those who died for/because of the Doctor? The mystery 
 deepens.</p>
 
-<p>With Clara being a 'sometimes companion' - only hopping on occasional trips with the Doctor - part of the episode focuses on Clara's normal life. 
+      <p>With Clara being a 'sometimes companion' - only hopping on occasional trips with the Doctor - part of the episode focuses on Clara's normal life. 
 We saw her family briefly last series but this season we will be getting more insight into her life as a teacher (incidentally at the same 
 school that Ian and Barbara taught at in the very first episode of Doctor Who). This episode introduced a new recurring character, Danny Pink. Danny is 
 Clara's fellow teacher and a former soldier who looks like he's still affected by what he's seen in war. </p>
 
-<p>The series is still finding its feet with the introduction of new characters, a darker tone and a different dynamic between the Doctor and 
+      <p>The series is still finding its feet with the introduction of new characters, a darker tone and a different dynamic between the Doctor and 
 Clara. This episode felt a little disconnected and jumbled, possibly because it jumped between the school and dalek for a while but also because 
 it seemed to lack the storyline flow of previous seasons. It felt like there were a lot of events but not enough to glue them together smoothly. 
 But it's still early in the season and inevitably it'll take a while for things to settle down. </p>
 
+    </div>
+  </section>
+
 <!-- episode break -->
 
-<div class="anchor" id="asn08-03"></div>
-<h3 class="page-header">Episode 3 - Robots of Sherwood	</h3>
-<p>Robin Hood...not just a legend.
+  <section class="row">
+    <span class="anchor" id="asn08-03"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 3 - Robots of Sherwood	</h3>
+      <p>Robin Hood...not just a legend.
 So Clara's pick of historical characters to meet is Robin Hood! The Doctor dismissed her idea, stating adamantly that Robin Hood was a fictional 
 character, nothing more than a storybook legend. He humours her though, taking her to Sherwood Forest in the 12<sup>th</sup> century where the first 
 person they come across is none other than the legend himself. The Doctor however can't believe it and spends most of the episode trying to prove that Robin, 
 his merry men and the Sheriff are not real, that they are an alien creation of some sort.</p>
 
-<p>He's right, in a way, because aliens <i>are</i> involved. The Sheriff managed to hook up with some alien robots who crash-landed nearby and hides 
+      <p>He's right, in a way, because aliens <i>are</i> involved. The Sheriff managed to hook up with some alien robots who crash-landed nearby and hides 
 their spaceship within his castle and the robots as his knights. The aliens were on their way to 'the promised land (more on this later) and require 
 gold to rebuild their engines. The Sheriff, believing that the robots will help him achieve world domination, forces the people to give up all their 
 gold and conscripts the peasants to assist in building the engine parts.</p>
 
-<p>The Doctor, as much as he's declared himself <i>not</i> to be Clara's boyfriend, is clearly jealous of Robin Hood and the two of them enter into a game of 
+      <p>The Doctor, as much as he's declared himself <i>not</i> to be Clara's boyfriend, is clearly jealous of Robin Hood and the two of them enter into a game of 
 one-manship in everything from sword-play to who can die slower. It was quite funny when the Doctor admitted that he had cheated in the 
 archery contest by fixing a homing device on the arrow-head. I quite liked this portrayal of Robin Hood, he was witty, sad, heroic and laughed 
 (in that fake-kind-of-way) all the time. This was something the Doctor found particularly annoying, which just made Robin do it even more. 
 It always makes for great chemistry and interaction when the characters are able to poke the Doctor and get him all riled up.</p>
 
-<p>The most annoying and implausible part of the episode was how they eventually saved the day. The alien spaceship was going to explode and without 
+      <p>The most annoying and implausible part of the episode was how they eventually saved the day. The alien spaceship was going to explode and without 
 enough gold onboard, it wasn't going to make it out of the atmosphere. Somehow, shooting one golden arrow into the side of the spaceship was 
 enough to boost it into orbit. Yeeeaaaah. So that was a cop-out. Usually there's <i>at least</i> a whole bunch of mumbo jumbo from the Doctor explaining 
 why something works.</p>
 
-<p>But this series seems to be much more in your face about things - the Doctor's blunt "Clara, I'm not your boyfriend", the phone call from 
+      <p>But this series seems to be much more in your face about things - the Doctor's blunt "Clara, I'm not your boyfriend", the phone call from 
 the 11<sup>th</sup> Doctor, Madam Vastra and Jenny, and now the the mystery of 'the promised land'. Perhaps I'm looking through rose-tinted glasses 
 but it felt like the series mystery was a lot more subtle in previous years. 'Bad Wolf', 'Torchwood', 'Harold Saxon' and the 'disappearing planets' all 
 were mentioned throughout their respective series. But you generally had to be paying attention to realise its significance because <i>the Doctor  
@@ -212,63 +220,73 @@ and now, 'the promised land'. 'The promised land' has been mentioned in every ep
 we know is that it looks like some quaint British garden overseen by someone named 'Missy' (who claims the Doctor is her boyfriend), and that dead 
 characters have turned up there. Thankfully Missy did not turn up at the end of this episode.</p>
 
-<p>Overall, compared to the previous two episodes, this one felt like it flowed a lot better. This was probably helped by the fact that the story 
+      <p>Overall, compared to the previous two episodes, this one felt like it flowed a lot better. This was probably helped by the fact that the story 
 of Robin Hood is legendary, so a lot of the character development and backstory was already a given. It also had a 
 lighter feel to it which was most welcome after two episodes which showed the Doctor in a darker light.</p>
 
+    </div>
+  </section>
+
 <!-- episode break -->
 
-<div class="anchor" id="asn08-04"></div>
-<h3 class="page-header">Episode 4 - Listen	</h3>
-<p>Do you ever talk aloud to yourself? Is anyone listening? Apparently according to the Doctor....Yes! ... Although it turns out the answer is No 
+  <section class="row">
+    <span class="anchor" id="asn08-04"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 4 - Listen	</h3>
+      <p>Do you ever talk aloud to yourself? Is anyone listening? Apparently according to the Doctor....Yes! ... Although it turns out the answer is No 
 by the end.</p>
 
-<p>This episode focuses more on Clara and her fellow teacher Danny Pink, with some interesting revelations about their future together. It picks up 
+      <p>This episode focuses more on Clara and her fellow teacher Danny Pink, with some interesting revelations about their future together. It picks up 
 where it left off last time. Danny having promised Clara a drink, asks Clara out to dinner. Danny is awkward throughout their interactions 
 and has a serious case of 'foot-in-mouth'. He appears to be suffering from PTSD and is quite sensitive and jumpy about any comment that might go
 to his military past. In any event, the date does not go well and Clara storms off back home where the Doctor and the Tardis are waiting for her. 
 Funnily enough he's decided to hide out in Clara's bedroom in case Clara brought her date home.</p>
 
-<p>But since she's free for the night, he's decided to take her back to the past, to the moment when she first had her 'bogeyman' dream about 
+      <p>But since she's free for the night, he's decided to take her back to the past, to the moment when she first had her 'bogeyman' dream about 
 creaks in the night and creatures under the bed. Clara gets 'plugged-in' to the Tardis's telepathic circuits. The only problem is she gets 
 distracted and they end up in (what we realise as) Danny's childhood back when he was called Rupert. Having eventually come to the same realisation and 
 seen Danny's past, Clara asks the Doctor to take her back to the restaurant right after she storms off so she can try to save the date.</p>
 
-<p>But it seems like things are just not going to work when Clara slips in Danny's former name 'Rupert' and Danny gets fed up with Clara's weirdness 
+      <p>But it seems like things are just not going to work when Clara slips in Danny's former name 'Rupert' and Danny gets fed up with Clara's weirdness 
 and lies and leaves. But not before a spaceman appears. Thinking it's the Doctor, Clara angrily follows him back to the Tardis where she's 
 shocked by the revelation that it's...Danny? Danny with an afro! Only it's not the same Pink. Still confused as to why the Tardis ended up in 
 Danny's past and not aware of the connection with Clara's date, the Doctor has tried to re-run the search and ended up grabbing Orson Pink. Orson Pink, 
 who appears to be possibly Clara and Danny's great-grandson 100 years in the future. That's something Clara didn't expect to see!</p>
 
-<p>Nor did she expect to go further into the Doctor's past than we've ever seen before. Having not seen Classic Who I'm not sure if we've ever seen 
+      <p>Nor did she expect to go further into the Doctor's past than we've ever seen before. Having not seen Classic Who I'm not sure if we've ever seen 
 the Doctor's childhood but here we see he was a scared little boy. I'm not even sure <i>how</i> this is possible when I thought everything was time-locked 
 but Clara ends up in what looks like a shed/barn (the same one as in the 50<sup>th</sup> anniversary special) where one little boy is crying. 
 We never get to see the child Doctor (apart from his feet) and once back in the Tardis Clara refuses to reveal to the (current) Doctor where 
 they are.</p>
 
-<p>This week's aliens turn out not to be aliens at all, but the fear of the dark and the possibility that there might be something out there. 
+      <p>This week's aliens turn out not to be aliens at all, but the fear of the dark and the possibility that there might be something out there. 
 In fact, there were no aliens at all! Quite novel, I can't remember a Doctor Who episode with no aliens. It was less scary and suspenseful than 
 I thought it would be but I guess the main mystery for the night was Danny Pink.</p>
 
+    </div>
+  </section>
+
 <!-- episode break -->
 
-<div class="anchor" id="asn08-05"></div>
-<h3 class="page-header">Episode 5 - Time Heist	</h3>
-<p>Why would the Doctor rob the bank?</p>
+  <section class="row">
+    <span class="anchor" id="asn08-05"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 5 - Time Heist	</h3>
+      <p>Why would the Doctor rob the bank?</p>
 
-<p>The trailer for this episode was intriguing. Finally, a trip to the future and an alien planet! The return of the memory worm!
+      <p>The trailer for this episode was intriguing. Finally, a trip to the future and an alien planet! The return of the memory worm!
 The Doctor, as usual, interrupts Clara as she's about to go on a date with Danny Pink and answers his ringing Tardis phone. Next thing they know 
 they're sitting around a table with an augmented human (computer chips in his brain) and a mutant human (takes on the image of anyone she touches). 
 None of them remember why they're there or what's going on but apparently, they're there to rob the wealthiest/most secure bank in the universe.</p>
 
-<p>Or so says 'The Architect', the mysterious figure who is always one step ahead, gathering the perfect team, leaving helpful clues and cases scattered 
+      <p>Or so says 'The Architect', the mysterious figure who is always one step ahead, gathering the perfect team, leaving helpful clues and cases scattered 
 around the bank. Which leads one to ask, as the Doctor does - why did The Architect need them if he could clearly get in and out of the bank? 
 Because the bank is 'guarded' by an alien telepath ('The Teller') who apparently can sense 'guilt' (i.e. if someone is thinking of trying to rob the 
 bank or commit fraud). Once a suspect is found, The Teller turns the person's brain to mush. Still not entirely sure how the group isn't found out - the Doctor's 
 reasoning that the person who <i>was</i> found out had more guilt seems a little weak. But in any case the chase is on as the group try to outwit 
 'The Teller'. There's action and suspense and it's a thrilling run through the fortress as neither we nor the group really know what's going on. </p>
 
-<p>Although it's not too much of a stretch to guess that 'The Architect' is really...The Doctor, and the target...The Teller. Apparently he and 
+      <p>Although it's not too much of a stretch to guess that 'The Architect' is really...The Doctor, and the target...The Teller. Apparently he and 
 Clara are there to rescue the alien and the only 
 way for them to bust the alien out of the bank was to do so on the fly. If The Doctor had gone in the usual way, The Teller would have sensed their 
 guilty thoughts and The Director would have detected their plans. They can't take the TARDIS in as there's a solar storm coming in that would affect 
@@ -276,19 +294,24 @@ the TARDIS but it's required to override the security system. As it is, their tw
 atomisers they used were actually teleports (similar to the Series 1 episode 'Bad Wolf') and they return to save The Doctor and Clara. 
 Still not sure <i>how</i> they knew to take the place of The Teller's guards though.</p>
 
-<p>So the timey wimey loopy pieces to this puzzle fit together in this way - The phone call the Doctor received at the beginning was from The Director 
+      <p>So the timey wimey loopy pieces to this puzzle fit together in this way - The phone call the Doctor received at the beginning was from The Director 
 (on what I presume is her death bed). She wants The Doctor to free The Teller. So The Doctor selects the team and plants all the clue cases and 
 then sends them in with the memory worms. They eventually meet The Director down in the private vault who sends down for The Teller. The Doctor gets an inkling 
 of what's happening and as The Director flees, gives her his number, telling her to call him one day. Then having worked it all out, the group + 
 The Teller (and his +1) then leave the bank and The Doctor sends everyone back home.</p>
 
-<p>Sure there are some plot holes but it was a good fast-paced and suspenseful episode and it was nice to get away from Earth.</p>
+      <p>Sure there are some plot holes but it was a good fast-paced and suspenseful episode and it was nice to get away from Earth.</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn08-06"></div>
-<h3 class="page-header">Episode 6 - The Caretaker	</h3>
-<p>So we've come to the middlish episodes of this series and so far, no double episodes yet...must be a first in the reboot.
+  <section class="row">
+    <span class="anchor" id="asn08-06"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 6 - The Caretaker	</h3>
+      <p>So we've come to the middlish episodes of this series and so far, no double episodes yet...must be a first in the reboot.
 	
 As every companion finds out, it's impossible to travel through time and space and <i>not</i> have your family or friends realise that the bloke 
 you are popping off with is no ordinary bloke. In fact, he's not even human! In this episode, Clara realises that she cannot keep up with her two very 
@@ -297,7 +320,7 @@ get several snapshots of Clara preparing to go on several dates with Danny, only
 right where she'd left off, often much less composed than before she got into the TARDIS. But hey, at least the Doctor got her back right on time 
 rather than 12 months later!</p>
 
-<p>The alien of the week is the Skovox Blitzer, one of the "deadliest" machines created. Frankly it takes a back seat to the Doctor-Clara-Danny 
+      <p>The alien of the week is the Skovox Blitzer, one of the "deadliest" machines created. Frankly it takes a back seat to the Doctor-Clara-Danny 
 storyline and is only there as a pretense to get The Doctor into the school. The alien trundles along rather noisily (and slowly) and sure, it has 
 a vaporising gun, but it's a bit like a poor-man's dalek. Anyway the Doctor is on it's trail and plans to trap the Skovox Blitzer at the school.
 He does this by going undercover as the new caretaker, much to Clara's displeasure. There are a few funny moments when The Doctor, knowing she has a 
@@ -306,38 +329,43 @@ a bowtie). The Doctor is therefore rudely surprised when he finds out that Clara
 now Maths teacher. The Doctor constantly refers to him as the "PE teacher" as an insult. The Doctor never took well to his companion's boyfriends.
 The fact that Danny ruined his plans by moving some of his gadgets didn't help.</p>
 
-<p>Nor does Danny take to The Doctor, as the Timelord reminds him of his former commanders and Danny correctly identifies him as a former soldier too.
+      <p>Nor does Danny take to The Doctor, as the Timelord reminds him of his former commanders and Danny correctly identifies him as a former soldier too.
 Danny isn't afraid to make his thoughts known and mocks the Doctor once he's on the TARDIS, saluting and Yessir-ing The Doctor. He can see that Clara 
 follows The Doctor without much questioning and is worried about her. Although as companions go, I've felt Clara's more often than not "worn the pants
 in their relationship". The dynamic's been different with the 12<sup>th</sup> Doctor, Clara's become much less sure about him and she's all kinds 
 of upset and angry, mostly with The Doctor for bringing the alien to the school but also because of his reaction to Danny.</p>
 
-<p>Clara's loyalties are wavering and with her declaration that she loves Danny (not exactly the most romantic moment), there are really only 
+      <p>Clara's loyalties are wavering and with her declaration that she loves Danny (not exactly the most romantic moment), there are really only 
 two possibilities - either Clara leaves, or Danny joins them. Considering how things are going, the latter is seeming less and less likely. 
 This was a very Clara-centric episode, as many of them have been this series. The fact that Clara was never a full-time companion and only joined
 The Doctor on "Wednesdays" meant that we got to see her Earth-life much more fleshed out.</p>
 
-<p>After a bit of a break, we finally got to see a bit more about "The Promised Land" mystery arc. A police officer who was killed by the Skovox Blitzer 
+      <p>After a bit of a break, we finally got to see a bit more about "The Promised Land" mystery arc. A police officer who was killed by the Skovox Blitzer 
 ends up in a very white area talking to who appears to be Missy's assistant. Not much information provided but there you go.
 Overall, I didn't find it a good episode. The alien was just a side story to the main drama concerning Clara. The Doctor was quite rude (no 
 surprise there) but now he seems much harder, dismissive and snarkier about things. </p>
 
-<p></p>
+      <p></p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn08-07"></div>
-<h3 class="page-header">Episode 7 - Kill the Moon	</h3>
-<p>Well, considering the events of this series so far, we all knew the train wreck that was coming. So the question is...was this Clara's last 
+  <section class="row">
+    <span class="anchor" id="asn08-07"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 7 - Kill the Moon	</h3>
+      <p>Well, considering the events of this series so far, we all knew the train wreck that was coming. So the question is...was this Clara's last 
 episode? (the answer is no, as she's in the series finale, but you've got to wonder how long she will keep putting up with things)</p>
 
-<p>Last week one of the students, Courtney Woods, stumbled on The Doctor and his TARDIS. Apparently after telling her she was "not special" and 
+      <p>Last week one of the students, Courtney Woods, stumbled on The Doctor and his TARDIS. Apparently after telling her she was "not special" and 
 then taking her into space (where she threw up), Courtney's been in a bit of a mood. Clara tries to get The Doctor to take back what he said but he 
 doesn't, instead offering to take her to the moon. They land not on the present-day moon but in the year 2049, where something on the moon is 
 wrecking destruction on the Earth (gravity and all that). A moon carrying an extra billion tonnes will do that. Because it turns out our moon is not 
 a moon at all but a giant egg. And like all live eggs, it's hatching time.</p>
 
-<p>But the trio are not the only people on the moon. A third-rate team of astronauts have been sent to investigate and if necessary, destroy the 
+      <p>But the trio are not the only people on the moon. A third-rate team of astronauts have been sent to investigate and if necessary, destroy the 
 moon. Their space shuttle was a museum piece because the space program was effectively dead. Not sure how blowing up the moon was meant to make 
 things better on Earth but there you go. After several lives are lost, to giant spiders that are actually "germs" on the giant baby alien, 
 it all comes down to a choice. The moon is hatching and they can either let the alien go, or destroy the alien which will 
@@ -345,7 +373,7 @@ somehow keep the moon intact. With only 1.5 hours to go, The Doctor gets into th
 to decide the fate of the moon. To destroy or not to destroy. As Clara points out later, this was exceptionally cruel of him when she considered 
 him her friend.</p>
 
-<p>The question is posed to the people of Earth and they pretty much unanimously vote to destroy the alien. But at the very very very last moment, 
+      <p>The question is posed to the people of Earth and they pretty much unanimously vote to destroy the alien. But at the very very very last moment, 
 Clara presses the button to deactivate the bomb and the TARDIS returns. The alien hatches, the moon disintegrates, the alien lays a new "moon" and 
 then the alien flies away. People get inspired and the space program restarts and humans spread throughout the galaxy. Happy ending. Or not. 
 Because Clara is absolutely furious with The Doctor and gives him a thorough tongue-lashing for leaving them up there on their own to decide the 
@@ -354,20 +382,25 @@ in the 50<sup>th</sup> special, or the episode with the Silurians. But he's alwa
 without needing to, left his companions in the lurch to make the decision. This Doctor is darker and seemingly less understanding and compassionate 
 than his predecessors.</p>
 
-<p>And Clara's had enough. She's been hanging on by a thread and now, The Doctor having put not just herself but her student in mortal danger, she's 
+      <p>And Clara's had enough. She's been hanging on by a thread and now, The Doctor having put not just herself but her student in mortal danger, she's 
 livid. He's not the same man as he once was and Clara doesn't trust him anymore. Doesn't trust that he'll have her back. 
 She tells The Doctor to leave and never come back. Her rage against The Doctor was something to behold. Pretty decent episode with a fantastic ending.</p>
 
+    </div>
+  </section>
+
 <!-- episode break -->
 
-<div class="anchor" id="asn08-08"></div>
-<h3 class="page-header">Episode 8 - Mummy on the Orient Express	</h3>
-<p>A few weeks have passed since Clara slammed the door on the TARDIS and told The Doctor she never wanted to see him again. The Doctor is taking 
+  <section class="row">
+    <span class="anchor" id="asn08-08"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 8 - Mummy on the Orient Express	</h3>
+      <p>A few weeks have passed since Clara slammed the door on the TARDIS and told The Doctor she never wanted to see him again. The Doctor is taking 
 her on one last trip, their last hurrah, on a space version of the Orient Express. Being loosely tied to the Agatha Christie novel, 
 the episode reminded me of the Series 4 episode "The Unicorn and the Wasp" which featured Agatha Christie, and follows a vaguely similar style.
 Passengers start dying under mysterious circumstances and it's up to The Doctor to figure out why.</p>
 
-<p>I really liked this episode. It starts off with a countdown and 66 seconds later, the first passenger is dead. Each death is preceded by this 
+      <p>I really liked this episode. It starts off with a countdown and 66 seconds later, the first passenger is dead. Each death is preceded by this 
 countdown in the corner and suspense is built up as we wonder...who will be the next victim? As per the episode title, the alien of the week is a mummy 
 (also known as 'The Foretold') and a suitably scary and well CGI'ed one at that, particularly when it goes <i>through</i> The Doctor.  We haven't 
 really had a good scary alien this series. The frightening thing is knowing that you're about to die and 
@@ -375,66 +408,76 @@ there's absolutely no way to stop it. Things crack on at a pretty good pace and 
 have a more upbeat, bright and larger cast setting. The Doctor's psychic paper also got an outing and it was funny seeing that the Captain's 
 greatest fear was that of a mystery shopper. </p>
 
-<p>That's not to say that things are back to normal between The Doctor and Clara. They <i>are</i> travelling together but things are a bit awkward. 
+      <p>That's not to say that things are back to normal between The Doctor and Clara. They <i>are</i> travelling together but things are a bit awkward. 
 The Doctor and Clara spend most of the episode apart and Clara gets time to think things through. She's wavering, she doesn't 
 hate him, but she also can't keep wondering if he's really got her back. By the end of the episode, she realises that he's not heartless. 
 Sometimes he appears to be so but it's always part of a bigger plan, there is method to his madness. 
 And in the end, it's all about saving people, because that's what The Doctor does. He doesn't always succeed, but not for a lack of trying.</p>
 
-<p>So for now at least, Clara is willing to travel with him again, and it was great to see The Doctor light up on hearing that, we haven't seen him 
+      <p>So for now at least, Clara is willing to travel with him again, and it was great to see The Doctor light up on hearing that, we haven't seen him 
 smile much in this incarnation. It'll be interesting to see how the Clara-Doctor-Danny dynamic progresses although I do hope it doesn't eat up 
 too much screen time. The other story arc was continued with the question of who keeps contacting The Doctor raised again. The train was run by a 
 computer 'Gus' (which reminded me of the angels in the Christmas episode 'Voyage of the Damned') but someone else was behind all this, 
 someone powerful enough to orchestrate all the pieces together, someone who has The Doctor's number.</p>
 
-<p>All in all, a cracking Doctor Who episode.</p>
+      <p>All in all, a cracking Doctor Who episode.</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn08-09"></div>
-<h3 class="page-header">Episode 9 - Flatline	</h3>
-<p>I'm really hope that Jamie Mathieson writes more episodes for Doctor Who because the two he's written this season (Mummy on the Orient Express 
+  <section class="row">
+    <span class="anchor" id="asn08-09"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 9 - Flatline	</h3>
+      <p>I'm really hope that Jamie Mathieson writes more episodes for Doctor Who because the two he's written this season (Mummy on the Orient Express 
 last week and this week's Flatline have been fantastic. He knows how to write original and scary aliens and these are the two best this series.</p>
 
-<p>This week's aliens are two-dimensional creatures. We never really see what they look like (apart from some vague shimmer-shape) because they often 
+      <p>This week's aliens are two-dimensional creatures. We never really see what they look like (apart from some vague shimmer-shape) because they often 
 take the guise of other people. Initially they exist in 2D, moving about in the walls and floor and basically "flattening" the people they kill into 
 the wall. Later they learn to take 3D form (sort of phasing/shimmering in and out). The reveal when all the people-murals in the tunnel start turning 
 around is quite scary and there was definitely a lot of running this episode as the group try to avoid "the boneless" as The Doctor dubs them in the end 
 (a terrible name but anyway).</p>
 
-<p>The comedy in this episode is provided by the fact that The Doctor who is stuck in his shrunken TARDIS. 
+      <p>The comedy in this episode is provided by the fact that The Doctor who is stuck in his shrunken TARDIS. 
 The aliens are leeching power from the TARDIS, which first 
 shrinks (from an outside perspective) into a half-size version. By the time Clara returns from scouting the area, the TARDIS is small enough to fit 
 into her handbag. It was an interesting idea and it worked really well. With The Doctor unable to physically help, he gives Clara his psychic paper and 
 sonic screwdriver and she, in a hilarious scene, takes on the mantle of "The Doctor, Doctor Oswald". But with great power also comes great 
 responsibility and Clara soon realises that as "The Doctor" it falls on her to make the decisions and 'rally the troops' as it were.</p>
 
-<p>The troops in this episode consist of a crew out doing community service. There's Rigsy, a youth 'doing time' for graffiti, a grumpy 
+      <p>The troops in this episode consist of a crew out doing community service. There's Rigsy, a youth 'doing time' for graffiti, a grumpy 
 overseer with such bad imagination the psychic paper doesn't work on him, and a few others also in green jumpsuits who get consumed/flattened by the 
 aliens. Rigsy's talent with graffiti comes in handy when Clara gets him to spray on a piece of paper a replica of a tunnel door and Clara tricks 
 the boneless into channelling their energy into the fake-door, through the wall and into the TARDIS. This gives the TARDIS enough energy to grow
 back to it's proper size and allow The Doctor to exit and send the boneless back home.</p>
 
-<p>Clara too was on her way home before this adventure began. The Doctor was supposed to drop her off so she could meet up with Danny, who doesn't 
+      <p>Clara too was on her way home before this adventure began. The Doctor was supposed to drop her off so she could meet up with Danny, who doesn't 
 know that she's still travelling with The Doctor. Seems like she's back to living her two-lives again. The Doctor, having found out that Danny doesn't 
 know that Clara's still travelling with him, is not happy at all. We know that next episode Danny comes onboard the TARDIS (with a group of students), so 
 there will probably be a confrontation of some sort. </p>
 
-<p>The episode ends with Missy observing Clara through an ipad-like device and noting that she chose well with Clara. The mystery continues...</p>
+      <p>The episode ends with Missy observing Clara through an ipad-like device and noting that she chose well with Clara. The mystery continues...</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn08-10"></div>
-<h3 class="page-header">Episode 10 - In the Forest of the Night	</h3>
-<p>We're getting to the business end of the series with this being the last episode before the two-part series finale.</p>
+  <section class="row">
+    <span class="anchor" id="asn08-10"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 10 - In the Forest of the Night	</h3>
+      <p>We're getting to the business end of the series with this being the last episode before the two-part series finale.</p>
 
-<p>Forests have sprung up overnight all over the Earth and London resembles a jungle. It was pretty cool seeing the jungle setting with 
+      <p>Forests have sprung up overnight all over the Earth and London resembles a jungle. It was pretty cool seeing the jungle setting with 
 Nelson's column sticking up here, the Underground sign over there and vines twisting around everything. I love a green leafy setting. Danny and 
 Clara have taken a class on an overnight excursion to the museum only to find the city landscape radically changed when they exit the next morning. 
 Clara of course immediately calls the Doctor, only he already knows about it as he is in London and one of the students, Maebh, has wandered off and 
 found the TARDIS. The group heads towards the TARDIS, Clara buzzing with questions and Danny more worried about getting the kids home.</p>
 
-<p>It was funny seeing the kids' reactions to the TARDIS because while most adults are stunned and run in and out in disbelief, these kids are 
+      <p>It was funny seeing the kids' reactions to the TARDIS because while most adults are stunned and run in and out in disbelief, these kids are 
 pretty blase about it all, with Ruby noting that after seeing an 
 entire forest pop up overnight, nothing surprises her anymore. The kids of course can't wait to get their hands on all the controls and buttons.
 With Danny and the Doctor meeting again, there's bound to be trouble, especially since Clara left her marking onboard the TARDIS and 
@@ -442,35 +485,40 @@ Danny realises that she's been seeing the Doctor and lying to him about it. Dann
 up he's more of the quiet frowny type. The two argue, but he's more concerned about getting the kids safely home than working out why 
 a forest has suddenly sprung up around them or why Clara's been lying to him about the Doctor.</p>
 
-<p>The Doctor thinks it has something to do with Maebh. Her sister died and since then, she's been hearing things. And now she's run off. It doesn't 
+      <p>The Doctor thinks it has something to do with Maebh. Her sister died and since then, she's been hearing things. And now she's run off. It doesn't 
 solve the mystery but running around after her keeps the episode moving. The Doctor converses with the "trees" (which is really quite spooky with
 the deeper voice coming out of Maebh's mouth) and realises that there is nothing he can do, the Earth is doomed as there's a gigantic solar flare 
 heading towards them. The Doctor offers to save them but Clara explains that the kids just want their mums and dads, Danny will never leave the kids 
 behind on their own and Clara won't be the "last of her kind". But as we all know, the Earth doesn't get scorched away. Turns out these flame-
 resistant trees have popped up for a reason. They're here to save the Earth from the solar storm, which they do and then promptly disappear. </p>
 
-<p>The Doctor and Clara watch the show from the TARDIS in space and Missy once again watches on. Who she is, 
+      <p>The Doctor and Clara watch the show from the TARDIS in space and Missy once again watches on. Who she is, 
 we'll find out next week and judging from the trailer, it looks like the mystery of who <i>is</i> Clara will also resurface.	</p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn08-11"></div>
-<h3 class="page-header">Episode 11 - Dark Water	</h3>
-<p>Wow. Wow wow wow wow wow wow. And so begins Part One of the Series 8 finale.</p>
+  <section class="row">
+    <span class="anchor" id="asn08-11"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 11 - Dark Water	</h3>
+      <p>Wow. Wow wow wow wow wow wow. And so begins Part One of the Series 8 finale.</p>
 
-<p>First up, the biggest reveal we've been waiting for this series - Who is Missy? And boy are we in for a treat. There's been ongoing 
+      <p>First up, the biggest reveal we've been waiting for this series - Who is Missy? And boy are we in for a treat. There's been ongoing 
 speculation (which I've avoided) and many people were on the money - The Master's back, regenerated as a woman. Missy = Mistress = Master. I was 
 inwardly squealing when this was revealed and it was a beautiful surprise. But let's deal with the rest of the episode first because the puzzle
 nicely unravelled over 40 minutes.</p>
 
-<p>The episode begins with Clara, who's spent some time mulling over what Danny told her last episode (although why she has post-it notes 
+      <p>The episode begins with Clara, who's spent some time mulling over what Danny told her last episode (although why she has post-it notes 
 with details from all the previous episode stuck all over her bookshelf is still a puzzle to me). She's on the phone with him and finally tells 
 him that she loves him. But what happens next is a terribly good reason why you shouldn't blurt out profound statements over the phone while the 
 other person is out and about. Because Danny, caught up in the moment, steps out onto the road and, well, you can guess what happens next. I would 
 have expected Clara to hear screeching tires or a thud or the phone dropping but all she hears is silence and then a very apologetic bystander. They 
 do a nice cut of her running to the scene that then blends into (probably) a few weeks later as she stands there staring at the spot where it happened.</p>
 
-<p>The love of your life dies and your best friend has a time machine. Not too difficult to see where this is going. But rather than asking directly, 
+      <p>The love of your life dies and your best friend has a time machine. Not too difficult to see where this is going. But rather than asking directly, 
 because deep down she knows you can't just go back and bring people back from the dead, she tries to trick The Doctor into turning back time. 
 It's actually a pretty dramatic and heartbreaking scene. Standing at the edge of an active volcano she threatens to throw all the TARDIS keys into 
 the lava unless he brings Danny back. On a side note I thought he could open the doors by clicking his fingers but maybe there still needs to be 
@@ -479,20 +527,20 @@ so easily tricked. Because the sleep patch she slapped on him actually never wor
 on the TARDIS and The Doctor let it all play out to see how far Clara would go. Clara's betrayed him, but he's still going to help her because 
 he cares about her ("Do you think I care for you so little that betraying me would make a difference?"). And so plugging Clara into the TARDIS, off to the "afterlife" or wherever Danny is they go.</p>
 
-<p>There's so much that happens next it's hard to know where to start! So let's start with the Nethersphere/Promised Land aka the place where all the 
+      <p>There's so much that happens next it's hard to know where to start! So let's start with the Nethersphere/Promised Land aka the place where all the 
 dead people keep turning up because that's where Danny finds himself. Seb, the perfectly witty AI interface welcomes Danny with coffee and the 
 obligatory questionnaire. Someone has been uploading the souls of the dead into a Gallifreyan matrix data slice, storing these souls to be downloaded 
 at a later date. Seb brings the funny in such a wonderfully understated way. Same with Doctor Chang, another quirky understated character who 
 The Doctor and Clara meet when the TARDIS materialises in what appears to be a mausoleum with giant fish tanks containing skeletons. </p>
 
-<p>I didn't recognise the windows at first although the giant circle joined with a smaller circle (like a tear) looked familiar. 
+      <p>I didn't recognise the windows at first although the giant circle joined with a smaller circle (like a tear) looked familiar. 
 But for hardcore fans, they would have recognised the eyes of the cybermen! Doctor Chang explains that 
 the skeletons are held in place with an "invisible" exoskeleton, invisible in the "dark water" which only shows organic material. Hmmmm.....
 The organisation 3W was set up to take care of the dead when the founder discovered voices in TV static. Voices that repeated the three words
 "don't cremate me". Spooky. Dr Chang manages to connect Clara up with Danny and as they communicate over the "telephone" the Doctor goes to 
 investigate something that's been bugging him.</p>
 
-<p>Backtracking a bit, when The Doctor and Clara first arrived, they encountered Missy, who cleverly claims she is a 
+      <p>Backtracking a bit, when The Doctor and Clara first arrived, they encountered Missy, who cleverly claims she is a 
 "Mobile Intelligence Systems Interface" android and gives The Doctor a very big welcoming smooch. The Doctor's reaction is priceless. Then 
 placing his hand on her chest, something that again shocks The Doctor, she claims that the Doctor maintains her heart. At the time she cleverly 
 covers it with "Dr Chang" but now all is revealed. A Gallifreyan matrix data slice, two hearts, Missy, is a Timelord. The one she claims he 
@@ -500,25 +548,30 @@ abandoned. He's befuddled, in shock and now running around downtown London confo
 take over the world. She's taking the dead, uploading their minds, upgrading their bodies and creating a new race of Cybermen -
 "cybermen from cyberspace". Humanity's biggest weakness - "the dead outnumber the living".</p>
 
-<p>Meanwhile Clara's heart to heart with Danny's not going so well. She's not sure it's really him but will do anything to save him if he's "real". He 
+      <p>Meanwhile Clara's heart to heart with Danny's not going so well. She's not sure it's really him but will do anything to save him if he's "real". He 
 can't allow her to kill herself to reach him and so gets her to terminate the call. Danny's an upstanding guy, but I've always found him stiff, 
 a bit dour, a bit too Eyeore. We get a glimpse here of why that might be. Danny's been living with the guilt of having killed a young boy back when he 
 was a soldier. A boy he meets face to face in this virtual "world".</p>
 
-<p>Part one ends with Danny contemplating whether he should delete his emotions, Clara trapped inside with a cyberman and the Doctor in shock outside 
+      <p>Part one ends with Danny contemplating whether he should delete his emotions, Clara trapped inside with a cyberman and the Doctor in shock outside 
 with Missy. What a cliffhanger. </p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn08-12"></div>
-<h3 class="page-header">Episode 12 - Death in Heaven</h3>
-<p>First off, there's a lot to like about this episode - the return of Osgood, Kate Lethbridge-Stewart and UNIT, diabolical Missy (somewhat), 
+  <section class="row">
+    <span class="anchor" id="asn08-12"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Episode 12 - Death in Heaven</h3>
+      <p>First off, there's a lot to like about this episode - the return of Osgood, Kate Lethbridge-Stewart and UNIT, diabolical Missy (somewhat), 
 knocking out The Doctor and the return of the Cybermen. But there was also 
 a fair bit I didn't like - Osgood's death (noooooooooooooooo), the shortlived "death" of Lethbridge-Stewart, the rather ridiculous method 
 of saving the Earth, Missy's death (again), and President Doctor (even if it wasn't his choosing). And a lot of other bits I found meh. As the 
 series finale it was always going to be an over-the-top action drama fest. And it was. But personally I liked last week's episode "Dark Water" more.</p>
 
-<p>Storyline. Missy has created a new army of seemingly unbeatable cybermen ("how do you win against an army that can weaponise the dead") and 
+      <p>Storyline. Missy has created a new army of seemingly unbeatable cybermen ("how do you win against an army that can weaponise the dead") and 
 everyone at first is milling around them taking selfies, as you do. Osgood pops up ("bow ties are cool") then UNIT and Kate Lethbridge-Stewart. 
 The Doctor and Missy get knocked out and taken aboard the international "Air Force One". Implausibly every nation has agreed to appoint The Doctor 
 The President of Earth in the event of an alien invasion. It's 'raining' over the graveyards and the Cybermen are rising from their graves. Missy 
@@ -534,12 +587,12 @@ boy he killed and The Doctor finds nothing at the coordinates Missy gave him. Th
 jumps the gun first by assuming Clara and Danny are back together. Santa shows up in the TARDIS so I guess he'll be in this year's Christmas 
 Special. And that's the storyline in a nutshell.</p>
 
-<p>The good - it was great to see Osgood, Lethbridge-Stewart and UNIT return after their appearance in the 50<sup>th</sup> special. Osgood is smart,
+      <p>The good - it was great to see Osgood, Lethbridge-Stewart and UNIT return after their appearance in the 50<sup>th</sup> special. Osgood is smart,
 a self-admitted OCD and very briefly hinted as a possible companion before being turned to ash by Missy. Thankfully even though Kate Lethbridge-Stewart 
 was sucked out of the plane she survived (apparently caught by Cyber-Dad). Clara trying the "I'm The Doctor" route was a funny twist even if 
 unsuccessful. The Doctor falling out of the exploding plane and into the TARDIS was pretty nice. </p>
 
-<p>The not so good - seriously? sending all the Cybermen up into the sky and exploding them completely eradicates every trace of the rainclouds?
+      <p>The not so good - seriously? sending all the Cybermen up into the sky and exploding them completely eradicates every trace of the rainclouds?
 I know Doctor Who resolutions are often a bit ridiculous but this seemed like a bit of an easy cop-out. 
 That Lethbridge-Stewart Senior managed to save his daughter Kate also seemed a bit far-fetched and for a world emptying its graves, the ground at the graveyards
 looked suspiciously untouched. Danny/Cyber-Danny. I have to admit the interactions between The Doctor and Danny have been a bit of a low for me 
@@ -551,34 +604,44 @@ Oncoming Storm moments	but his pain and darkness was still balanced by a slightl
 say The Doctor needs to be bouncing around like a maniac but apart from a very few moments, it just feels like there's been a bit of a cloud
 hanging over this series.	</p>
 
-<p>Oh and did I mention Osgood is gone? That kinda sums up this episode for me.
+      <p>Oh and did I mention Osgood is gone? That kinda sums up this episode for me.
 </p>
+
+    </div>
+  </section>
 
 <!-- episode break -->
 
-<div class="anchor" id="asn08-13"></div>
-<h3 class="page-header">Christmas Special - Last Christmas	</h3>
-<p>Have you ever woken from a dream only to realise you're still dreaming? That's the premis of the Christmas Special this year.</p>
+  <section class="row">
+    <span class="anchor" id="asn08-13"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Christmas Special - Last Christmas	</h3>
+      <p>Have you ever woken from a dream only to realise you're still dreaming? That's the premis of the Christmas Special this year.</p>
 
-<p>Dream-crab aliens have suckered themselves onto the Doctor, Clara and several other people and pulled them into a shared dream experience.
+      <p>Dream-crab aliens have suckered themselves onto the Doctor, Clara and several other people and pulled them into a shared dream experience.
 As the episode unfolds, the group realise they are in dreams within dreams and can't be sure whether or not they have actually woken or are still
 caught up in another dream. So how do they know they're still dreaming? Well, do you believe in Santa Claus? Santa pops up on Christmas Eve in the North Pole
 (where the episode is set) with two helper elves in order to save the day (or night as it were). And since Santa re-appears every time the group 
 "wakes up", well, they can't actually be awake can they? It was inevitable that a Christmas episode would eventually feature Santa and I thought 
 it worked pretty well. This Santa was witty ("how do you fit all the presents on the sleigh"..."it's bigger on the inside")</p>
 
-<p>As you'll remember from the series finale, The Doctor and Clara both lied to each other about finding Gallifrey and Danny's return. In this 
+      <p>As you'll remember from the series finale, The Doctor and Clara both lied to each other about finding Gallifrey and Danny's return. In this 
 episode the truth comes out and they acknowledge that Gallifrey was not found and Danny did not return. Which opens the way for Clara to continue 
 travelling with the Doctor since she no longer has Danny as a reason to stay behind. The highlight of the epsiode for me were the scenes with old-Clara. 
 The Doctor travels to Clara to remove the dream crab but travels too far into the future when Clara is in her 80s. The scenes between the Doctor 
 and Clara were so tender and the Doctor was so gentle, it was so sweet to see them interact. In a way, it would have been a great ending for Clara 
 but of course, it was just a dream. Clara will be joing the Doctor in the TARDIS for Series 9.</p>
 
+    </div>
+  </section>
+
 <!-- episode break -->
 
-<div class="anchor" id="asn08-14"></div>
-<h3 class="page-header">Concluding Thoughts</h3>
-<p>And here ends Peter Capaldi's first year as The Doctor. I had my doubts but the Twelth Doctor is growing on me. After the exuberence and 
+  <section class="row">
+    <span class="anchor" id="asn08-14"></span>
+    <div class="col-xs-12">
+      <h3 class="page-header">Concluding Thoughts</h3>
+      <p>And here ends Peter Capaldi's first year as The Doctor. I had my doubts but the Twelth Doctor is growing on me. After the exuberence and 
 bouncing energy of the Tenth and Eleventh Doctors (which sometimes was ridiculously over-the-top), it's been refreshing to see a Doctor who 
 feels the weight of his 2000+ years and is a little grittier and harder because of it. You live this long, sure you may have accomplished great things
 but you've also probably made many mistakes and had many regrets. This Doctor's understated and dry sense of humour when dealing with people
@@ -587,40 +650,47 @@ For me, the season was a mix of highs and lows. Some great episodes with interes
 fabulous form). But I thought there was also a bit too much focus on Clara and the constant in-your-face references to The Promised Land 
 were annoying. Overall, a decent transition for a new Doctor.</p>
 
+    </div>
+  </section>
+
 <!-- episode break -->
 
+</div><!-- /.episode review--> 
+</div><!-- /.main content container--> 
+
 <!-- Footer -->
-	<footer>
-	<hr>
-	<div class="row">
-		<div class="col-xs-6 col-md-6"><p>&copy; Cazellie 2016</p></div>
-		<div class="col-xs-6 col-md-6" align="right"><p><a href="acknowledgements.html">Acknowledgements</a></p></div>
-	</div>
-	</footer>
- 
-	</div>
- </div>	
-	
-	
-	
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-	<script src="js/docs.min.js"></script>
-	<script src="js/menu.js"></script>
+<footer>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6"><p>&copy; Cazellie 2016</p></div>
+            <div class="col-xs-6 col-sm-6 col-md-6" align="right"><p><a href="acknowledgements.html">Acknowledgements</a></p></div>
+        </div>
+    </div>
+</footer>
 
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/docs.min.js"></script>
+<script src="js/menu.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-55594701-1', 'auto');
-	ga('send', 'pageview');
-	</script>
-	
+ga('create', 'UA-55594701-1', 'auto');
+ga('send', 'pageview');
 
-  </body>
-</html>
+
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+</script>
+</body>
+</html> 
