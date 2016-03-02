@@ -81,6 +81,7 @@ body {
 /** for tiny screens */
 @media (max-width: 767px) {
     .jumbotron  {
+        position: relative;
         background-color: black;
         background-image: none;
     }
@@ -94,6 +95,11 @@ body {
     body {
         font-family: Arial, Helvetica, sans-serif;
         padding-top: 120px; 
+    }
+
+    #main-content {
+      margin-top: 40px;
+      position: relative;
     }
 
     #episodes {
