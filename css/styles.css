@@ -5,6 +5,7 @@
 }
 
 body {
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 160px; 
 }
@@ -47,12 +48,13 @@ body {
 
 #main-content {
   margin-top: 20px;
+  position: relative;
 }
 
 .anchor{
   display: block;
-  height: 150px; /*same height as header*/
-  margin-top: -150px; /*same height as header*/
+  height: 160px; /*same height as header*/
+  margin-top: -160px; /*same height as header*/
   visibility: hidden;
 }
 
@@ -70,6 +72,10 @@ body {
 
 .nav-sidebar {
   display: none;
+}
+
+.list-group {
+    margin-bottom: 0px;
 }
 
 /** for tiny screens */
@@ -91,7 +97,6 @@ body {
     }
 
     #episodes {
-        display: block;
         background-color: #222; 
         right: 15px;   
         height: 80%;   
@@ -140,6 +145,10 @@ body {
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
     border-right: 1px solid #eee;
+  }
+  
+  .list-group {
+    margin-top: -20px;
   }
 
 }
