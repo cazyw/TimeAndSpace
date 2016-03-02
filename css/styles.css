@@ -103,7 +103,6 @@ body {
     }
 
     #episodes {
-        display: block;
         background-color: #222; 
         right: 15px;   
         height: 80%;   
