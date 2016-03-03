@@ -1,10 +1,32 @@
+#####################################################
+# Python script to build the Doctor Who Archives
+# Builds the episode review pages for each series
+# 
+# Requires:
+# - text files per episode in series folders
+# 
+# Creates a page per series in the parent folder
+#
+# Updated: 3 March 2016
+#
+#####################################################
+
+
 import os
 import datetime
+
+
 # Global variables
 
 rootdir = '.'
+
+# anchor at the top of each episode review
 episode_anchor = '    <span class="anchor" id="axx"></span>'
+
+# divider ending each episode review
 episode_end = '</p>\n\n    </div>\n  </section>\n\n<!-- episode break -->\n\n'
+
+# hash for series number and year
 series_year = {
 	'1': '2005',
 	'2': '2006',
@@ -18,12 +40,16 @@ series_year = {
 	'9': '2015'
 }
 
+# link to episode review in small screen drop-down
 hidden_menu = '           <li id="xx"><a href="#axx">EPISODE</a></li>\n'
 
+# link to episode review in side bar
 side_menu = '    <li><a href="#axx">EPISODE</a></li>\n'
 
+# start of each section/episode review
 section_start = '  <section class="row">\n'
 
+# header section before the episode reviews
 HEADER = '''<!DOCTYPE html>
 <html>
 <head>
@@ -84,6 +110,7 @@ SIDEBAR
 <div class="episode-review">
 '''
 
+# footer section after the episode reviews
 FOOTER = '''</div><!-- /.episode review--> 
 </div><!-- /.main content container--> 
 
@@ -147,6 +174,9 @@ for dirName, subdirList, fileList in os.walk(rootdir):
 	
 	series_output = HEADER.replace('Series x', 'Series ' + series_number).replace('series in xxxx', 'series in ' + series_year[series_number])
 	
+
+    # uses the file names and content in series folders 
+    # to dynamically build the anchors and links in menus
 	for file in fileList:
 		file_path = os.path.join(dirName, file)
 		current_file = open(file_path)
