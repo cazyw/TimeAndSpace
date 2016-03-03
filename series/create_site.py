@@ -115,7 +115,7 @@ FOOTER = '''</div><!-- /.episode review-->
 </div><!-- /.main content container--> 
 
 <!-- Footer -->
-<footer>
+<footer class="series-footer">
     <hr>
     <div class="container-fluid">
         <div class="row">

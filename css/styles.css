@@ -164,7 +164,7 @@ body {
     margin-top: -20px;
   }
 
-  footer {
+  footer.series-footer {
     position: relative;
     margin-left: 280px;
   }
