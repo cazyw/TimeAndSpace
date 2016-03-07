@@ -14,11 +14,12 @@ body {
     border-radius: 0;
     margin: 0px;
     padding: 0px;
+    border-bottom-color: white;
 }
 
 .jumbotron  {
     background-image: url("../images/19682-tardis-doctor-who-1920x1200-tv-show-wallpaper.png");
-    background-color: black;
+    background-color: #000000;
     margin: 0px;
     padding: 0px;
     background-size: 80%;
@@ -36,6 +37,11 @@ body {
     color: #a6a6a6;
 }
 
+#buffer {
+  height: 5px;
+  background-color: #ffffff;
+  border: 0px solid white;
+}
 
 /* Hide for mobile, show later (for slide carousel) */
 #myCarousel {

@@ -89,7 +89,8 @@ HIDDEN_MENU
           <h1>Doctor Who Series x</h1>
           <p>Episodes from the series in xxxx</p> 
         </div><!-- /.container-fluid --> 
-      </div><!-- /.jumbotron -->        
+      </div><!-- /.jumbotron -->    
+      <div id="buffer"></div>    
     </nav> 
 </header>
 
