@@ -156,7 +156,7 @@ $(document).ready(function () {
 # Traverses the series directories and creates webpage for each series
 		
 for dirName, subdirList, fileList in os.walk(rootdir):
-	print 'Found directory: %s' % dirName
+	print ('Found directory: %s' % dirName)
 	
 	# exclude the root directory as there are no series files
 	
@@ -166,7 +166,7 @@ for dirName, subdirList, fileList in os.walk(rootdir):
 	series_filename = dirName + '.html'
 	series_file = open('..\\' + series_filename,'w')
 	series_file.truncate()
-	print 'File created: ' + series_filename				
+	print ('File created: ' + series_filename				)
 	
 	series_number = dirName[4:].replace('.txt','').replace('0','')
 	
@@ -181,7 +181,7 @@ for dirName, subdirList, fileList in os.walk(rootdir):
 	for file in fileList:
 		file_path = os.path.join(dirName, file)
 		current_file = open(file_path)
-		print 'Opening series file: ' + file_path
+		print ('Opening series file: ' + file_path)
 
 		title = current_file.readline()
 		current_file.seek(0, 0)
