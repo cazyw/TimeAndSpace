@@ -1,8 +1,4 @@
 TimeAndSpace
 ============
 
-Testing testing...1...2...3...
-
-Very first repository and it'll be a blast!
-
-And here we go...
+Everything is at [http://cazyw.github.io/TimeAndSpace](http://cazyw.github.io/TimeAndSpace) under the gh-pages branch
