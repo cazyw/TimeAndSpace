@@ -213,3 +213,18 @@ body {
 ol {
     padding-left: 20px;
 }
+
+.indent1 {
+  padding-left: 22px ;
+}
+.indent2 {
+  padding-left: 44px ;
+}
+.indent3 {
+  padding-left: 66px ;
+}
+
+.vertical-align {
+  height: 50px;
+  padding-top: 10px;
+}
