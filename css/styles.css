@@ -10,6 +10,10 @@ body {
     padding-top: 160px; 
 }
 
+a.btn.btn-default {
+  border-radius: 0px;
+} 
+
 .navbar {
     border-radius: 0;
     margin: 0px;
@@ -35,26 +39,6 @@ body {
 .jumbotron p {
     font-size: 1.5em;
     color: #a6a6a6;
-}
-
-#buffer {
-  height: 5px;
-  background-color: #ffffff;
-  border: 0px solid white;
-}
-
-/* Hide for mobile, show later (for slide carousel) */
-#myCarousel {
-  display: none;
-}
-
-#quote-box {
-  display: none;
-}
-
-#main-content {
-  margin-top: 20px;
-  position: relative;
 }
 
 .anchor{
@@ -227,4 +211,25 @@ ol {
 .vertical-align {
   height: 50px;
   padding-top: 10px;
+}
+
+
+#buffer {
+  height: 5px;
+  background-color: #ffffff;
+  border: 0px solid white;
+}
+
+/* Hide for mobile, show later (for slide carousel) */
+#myCarousel {
+  display: none;
+}
+
+#quote-box {
+  display: none;
+}
+
+#main-content {
+  margin-top: 20px;
+  position: relative;
 }

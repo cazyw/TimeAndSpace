@@ -1,4 +1,3 @@
-#####################################################
 # Python script to build the Doctor Who Archives
 # Builds the episode review pages for each series
 # 
@@ -8,8 +7,7 @@
 # Creates a page per series in the parent folder
 #
 # Updated: 3 March 2016
-#
-#####################################################
+
 
 
 import os
@@ -36,7 +34,7 @@ series_year = {
 	'5': '2010',
 	'6': '2011',
 	'7': '2012-2013',
-    '8': '2014',
+  '8': '2014',
 	'9': '2015'
 }
 
@@ -120,7 +118,7 @@ FOOTER = '''</div><!-- /.episode review-->
     <hr>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6"><p>&copy; Cazellie YEAR</p></div>
+            <div class="col-xs-6 col-sm-6 col-md-6"><p>&copy; Caz YEAR</p></div>
             <div class="col-xs-6 col-sm-6 col-md-6" align="right"><p><a href="acknowledgements.html">Acknowledgements</a></p></div>
         </div>
     </div>
